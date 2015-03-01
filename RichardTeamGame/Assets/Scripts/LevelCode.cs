@@ -18,7 +18,7 @@ public class LevelCode : MonoBehaviour
 						Application.LoadLevel (Application.loadedLevel + 1);
 				}
 		}
-		void OnTriggerEnter (Collider2D other)
+		void OnTriggerEnter2D (Collider2D other)
 		{
 				if (other.gameObject.tag == "Player1") {
 						playerOneEnter = true;
@@ -27,7 +27,7 @@ public class LevelCode : MonoBehaviour
 						playerTwoEnter = true;
 				}
 		}
-		void OnTriggerExit (Collider2D other)
+		void OnTriggerExit2D (Collider2D other)
 		{
 				if (other.gameObject.tag == "Player1") {
 						playerOneEnter = false;
