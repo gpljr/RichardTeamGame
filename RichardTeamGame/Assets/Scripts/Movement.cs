@@ -6,7 +6,8 @@ public class Movement : MonoBehaviour
 
 
 		public float maxSpeed = 10f;
-
+	public static float player1x = this.Transform.position.x;
+	public static float player1y = this.transform.posiiton.y;
 
 		// Use this for initialization
 		void Start ()

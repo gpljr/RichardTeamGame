@@ -4,11 +4,9 @@ using System.Collections;
 public class Movement2 : MonoBehaviour {
 
 	public float maxSpeed2 = 10f;
-	public GameObject camera1;
-	public GameObject camera2;
 
-	private bool cSwitch = false;
-
+	public static float player2x = this.Transform.position.x;
+	public static float player2y = this.transform.posiiton.y;
 
 	// Use this for initialization
 	void Start () {
@@ -27,19 +25,6 @@ public class Movement2 : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveV * maxSpeed2);
 	}
 
-	void Update (){
-		if (!cSwitch && Input.GetKeyDown (KeyCode.Space)) {
-						camera1.SetActive (false);
-						camera2.SetActive (true);
-			cSwitch = true;
-
-				} else if (cSwitch && Input.GetKeyDown (KeyCode.Space)) {
-			camera1.SetActive (true);
-			camera2.SetActive (false);
-			cSwitch = false;
-				}
-
-	}
 
 
 }
