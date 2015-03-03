@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour {
 	private float p2y;
 	private float cameraX = 0;
 	private float cameraY = 0;
+	public float cameraZ = -20;
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +26,7 @@ public class CameraFollow : MonoBehaviour {
 		cameraX = (p1x + p2x) / 2;
 		cameraY = (p1y + p2y) / 2;
 
-		this.transform.position = new Vector3 (cameraX, cameraY, -10);
+		this.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
 
 
 	}
