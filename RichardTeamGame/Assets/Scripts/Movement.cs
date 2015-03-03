@@ -23,9 +23,9 @@ public class Movement : MonoBehaviour
 
 				rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-				float moveV = Input.GetAxis ("Vertical");
+				/*float moveV = Input.GetAxis ("Vertical");
 
-				rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveV * maxSpeed);
+				rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveV * maxSpeed);*/
 
 		}
 

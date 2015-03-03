@@ -1212,7 +1212,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 493231804ee099f41830dca44bda47a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &344081551
@@ -1598,7 +1598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
       propertyPath: m_SortingOrder
@@ -1846,12 +1846,16 @@ Prefab:
       propertyPath: m_Name
       value: Door1
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
+    - target: {fileID: 0}
       propertyPath: trigger1
       value: 
       objectReference: {fileID: 1925525572}
-    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
+    - target: {fileID: 0}
       propertyPath: trigger2
+      value: 
+      objectReference: {fileID: 1531637939}
+    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
+      propertyPath: trigger1
       value: 
       objectReference: {fileID: 1531637939}
     m_RemovedComponents: []
@@ -2389,14 +2393,18 @@ Prefab:
       propertyPath: m_Name
       value: Door1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: trigger1
+      value: 
+      objectReference: {fileID: 1925525572}
+    - target: {fileID: 0}
+      propertyPath: trigger2
+      value: 
+      objectReference: {fileID: 1531637939}
     - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
       propertyPath: trigger1
       value: 
       objectReference: {fileID: 1925525572}
-    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
-      propertyPath: trigger2
-      value: 
-      objectReference: {fileID: 1531637939}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
   m_RootGameObject: {fileID: 1464819682}
@@ -3146,7 +3154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0f1334566a655438b9422fbd50aedd, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 0f0f1334566a655438b9422fbd50aedd, type: 2}
       propertyPath: m_SortingOrder
@@ -4008,7 +4016,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 493231804ee099f41830dca44bda47a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1097602020
@@ -4414,7 +4422,7 @@ Transform:
   m_GameObject: {fileID: 1191810471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.21514845, y: 7.6229291, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .949999988, y: .949999988, z: .949999988}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -5498,13 +5506,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464819682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 110df9357fe74904787a77178c543187, type: 3}
+  m_Script: {fileID: 11500000, guid: 8effe14ec32eb6c419a21355b250bde8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerNumber: 1
   trigger1: {fileID: 1925525572}
-  trigger2: {fileID: 1531637939}
-  doorMove: {x: 1, y: 0}
 --- !u!1 &1480001758
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,7 +6304,7 @@ Transform:
   m_GameObject: {fileID: 1689657850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.86748981, y: 7.60395956, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .949999988, y: .949999988, z: .949999988}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -6441,13 +6446,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715277398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 110df9357fe74904787a77178c543187, type: 3}
+  m_Script: {fileID: 11500000, guid: 8effe14ec32eb6c419a21355b250bde8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerNumber: 1
-  trigger1: {fileID: 1925525572}
-  trigger2: {fileID: 1531637939}
-  doorMove: {x: 1, y: 0}
+  trigger1: {fileID: 1531637939}
 --- !u!1 &1761155140
 GameObject:
   m_ObjectHideFlags: 0

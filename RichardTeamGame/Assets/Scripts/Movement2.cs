@@ -16,9 +16,9 @@ public class Movement2 : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 	
-		float move = Input.GetAxis ("Horizontal1");
+		/*float move = Input.GetAxis ("Horizontal1");
 		
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed2, rigidbody2D.velocity.y);
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed2, rigidbody2D.velocity.y);*/
 		
 		float moveV = Input.GetAxis ("Vertical1");
 		

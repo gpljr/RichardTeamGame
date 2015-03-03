@@ -18,6 +18,11 @@ public class CameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			Application.LoadLevel ("Demo1");
+				}
+
 		p1x = Movement.player1x;
 		p1y = Movement.player1y;
 		p2x = Movement2.player2x;
