@@ -159,7 +159,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899841072}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
@@ -261,7 +261,7 @@ Transform:
   m_PrefabInternal: {fileID: 2078276598}
   m_GameObject: {fileID: 1369793529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.09352589, y: -1.86111403, z: 0}
+  m_LocalPosition: {x: 6.5115881, y: -.0604376793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -285,8 +285,8 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 2078276598}
   m_GameObject: {fileID: 1369793529}
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 100
+  m_LinearDrag: 10
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
@@ -331,7 +331,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1424284751}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5824389ceea0a43bdae0e37838efd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraZ: -20
 --- !u!1 &1685543763
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,11 +586,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.09352589
+      value: 6.5115881
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.86111403
+      value: -.0604376793
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}
       propertyPath: m_LocalPosition.z
@@ -614,6 +615,10 @@ Prefab:
     - target: {fileID: 400000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17dee9bc7edf3284680bab1ef0ad6380, type: 2}

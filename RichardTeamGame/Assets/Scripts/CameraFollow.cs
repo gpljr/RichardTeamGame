@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			Application.LoadLevel ("Demo1");
+			Application.LoadLevel (Application.loadedLevel);
 				}
 
 		p1x = Movement.player1x;

@@ -1,22 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PushTrigger : MonoBehaviour {
+public class PushTriggerUp : MonoBehaviour {
 
 	public GameObject pusher;
 	private bool pushOn = false;
+	private float startLocation;
 
 
 	// Use this for initialization
 	void Start () {
-	
+		startLocation = pusher.transform.position.y;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 		if (pushOn) {
-			pusher.transform.position += new Vector3(0.1f,0,0);
+			pusher.transform.position += new Vector3(0,0.1f,0);
+				}
+		if (!pushOn && pusher.transform.position.y > startLocation) {
+			pusher.transform.position += new Vector3(0,-0.1f,0);
 				}
 
 	}
