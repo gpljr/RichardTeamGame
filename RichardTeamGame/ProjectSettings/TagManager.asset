@@ -5,6 +5,10 @@ TagManager:
   tags:
   - Player1
   - Player2
+  - Shield
+  - Bullet
+  - BulletDestroyer
+  - Timer
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
