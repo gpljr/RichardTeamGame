@@ -49,10 +49,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8effe14ec32eb6c419a21355b250bde8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0973a7a10e225d44ca6924bef44a90c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerNumber: 1
   trigger1: {fileID: 0}
+  trigger2: {fileID: 0}
+  doorMove: {x: 1, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

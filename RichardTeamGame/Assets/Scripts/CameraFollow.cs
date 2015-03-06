@@ -10,6 +10,9 @@ public class CameraFollow : MonoBehaviour {
 	private float cameraX = 0;
 	private float cameraY = 0;
 	public float cameraZ = -20;
+	private float boxDistance;
+	public Transform Player1;
+	public Transform Player2;
 
 	// Use this for initialization
 	void Start () {
@@ -31,8 +34,18 @@ public class CameraFollow : MonoBehaviour {
 		cameraX = (p1x + p2x) / 2;
 		cameraY = (p1y + p2y) / 2;
 
+		boxDistance = Vector3.Distance(Player1.position, Player2.position);
+
+		if (boxDistance < 20f) {
+						cameraZ = -20;
+				} else if (boxDistance > 20f) {
+			cameraZ = (-20f -(boxDistance - 20f));
+				}
+
 		this.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+		Debug.Log (boxDistance);
 
 
 	}
+
 }

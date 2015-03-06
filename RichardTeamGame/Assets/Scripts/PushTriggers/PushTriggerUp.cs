@@ -17,10 +17,11 @@ public class PushTriggerUp : MonoBehaviour {
 	void Update () {
 	
 		if (pushOn) {
-			pusher.transform.position += new Vector3(0,0.1f,0);
+			//pusher.transform.position += new Vector3(0,0.1f,0);
+			pusher.rigidbody2D.velocity = new Vector2 ( rigidbody2D.velocity.x, 3);
 				}
 		if (!pushOn && pusher.transform.position.y > startLocation) {
-			pusher.transform.position += new Vector3(0,-0.1f,0);
+			pusher.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, -3);
 				}
 
 	}

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PushTriggerDown : MonoBehaviour {
+public class PushTriggerLeft : MonoBehaviour {
+
 	public GameObject pusher;
 	private bool pushOn = false;
 	private float startLocation;
@@ -9,17 +10,18 @@ public class PushTriggerDown : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		startLocation = pusher.transform.position.y;
+		startLocation = pusher.transform.position.x;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 		if (pushOn) {
-			pusher.transform.position += new Vector3(0,-0.1f,0);
+			//pusher.transform.position += new Vector3(0,0.1f,0);
+			pusher.rigidbody2D.velocity = new Vector2 (-3f, rigidbody2D.velocity.y);
 		}
-		if (!pushOn && pusher.transform.position.y < startLocation) {
-			pusher.transform.position += new Vector3(0,0.1f,0);
+		if (!pushOn && pusher.transform.position.x < startLocation) {
+			pusher.rigidbody2D.velocity = new Vector2 (3f, rigidbody2D.velocity.y);
 		}
 		
 	}
