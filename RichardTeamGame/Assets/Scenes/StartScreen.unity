@@ -74,6 +74,54 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1001 &473464665
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.46821499
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.950472
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+  m_RootGameObject: {fileID: 1934510404}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &980294720
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +220,6 @@ GameObject:
   - 92: {fileID: 1500505771}
   - 124: {fileID: 1500505770}
   - 81: {fileID: 1500505769}
-  - 114: {fileID: 1500505774}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -245,17 +292,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1500505774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1500505768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a27789d59c68ee42804fe092ad1ed6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1543523219
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,3 +342,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &1934510404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+  m_PrefabInternal: {fileID: 473464665}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1934510406}
+  - 114: {fileID: 1934510405}
+  m_Layer: 0
+  m_Name: LevelCode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1934510405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9769a8f600269c7459738288a6e121d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 473464665}
+  m_GameObject: {fileID: 1934510404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029bc772547149149a339c7523226e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1934510406
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+  m_PrefabInternal: {fileID: 473464665}
+  m_GameObject: {fileID: 1934510404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.46821499, y: -1.950472, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3

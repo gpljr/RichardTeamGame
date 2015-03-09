@@ -16,24 +16,40 @@ public class LevelCode : MonoBehaviour
 		{
 				if (playerOneEnter && playerTwoEnter) {
 						Application.LoadLevel (Application.loadedLevel + 1);
+						print ("next level");
+				}
+				if (Application.loadedLevelName == "StartScreen") {
+						if (Input.anyKeyDown) {
+								Application.LoadLevel (Application.loadedLevel + 1);
+						}
 				}
 		}
-		void OnTriggerEnter2D (Collider2D other)
+		void OnEnable ()
 		{
-				if (other.gameObject.tag == "Player1") {
+				Events.g.AddListener<PlayerEnterLevelDoorEvent> (PlayerEnter);
+				Events.g.AddListener<PlayerExitLevelDoorEvent> (PlayerExit);
+		}
+	
+		void OnDisable ()
+		{
+				Events.g.RemoveListener<PlayerEnterLevelDoorEvent> (PlayerEnter);
+				Events.g.RemoveListener<PlayerExitLevelDoorEvent> (PlayerExit);
+		}
+		void PlayerEnter (PlayerEnterLevelDoorEvent e)
+		{
+				if (e.isPlayerOne) {
 						playerOneEnter = true;
-				}
-				if (other.gameObject.tag == "Player2") {
+				} else {
 						playerTwoEnter = true;
 				}
 		}
-		void OnTriggerExit2D (Collider2D other)
+		void PlayerExit (PlayerExitLevelDoorEvent e)
 		{
-				if (other.gameObject.tag == "Player1") {
+				if (e.isPlayerOne) {
 						playerOneEnter = false;
-				}
-				if (other.gameObject.tag == "Player2") {
+				} else {
 						playerTwoEnter = false;
 				}
 		}
+
 }
