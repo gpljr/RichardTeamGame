@@ -6,7 +6,7 @@ public class PushTriggerRight : MonoBehaviour {
 	public GameObject pusher;
 	private bool pushOn = false;
 	private float startLocation;
-	
+	public float endLocation = 10f;
 	
 	// Use this for initialization
 	void Start () {
@@ -20,8 +20,14 @@ public class PushTriggerRight : MonoBehaviour {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
 			pusher.rigidbody2D.velocity = new Vector2 ( 3f, rigidbody2D.velocity.y);
 		}
+		if (pushOn && pusher.transform.position.y > endLocation) {
+			pusher.transform.position = new Vector3 (endLocation,pusher.transform.position.y, pusher.transform.position.z);
+		}
 		if (!pushOn && pusher.transform.position.x > startLocation) {
 			pusher.rigidbody2D.velocity = new Vector2 (-3f, rigidbody2D.velocity.y);
+		}
+		if (!pushOn && pusher.transform.position.x < startLocation) {
+			pusher.transform.position = new Vector3 (startLocation,pusher.transform.position.y, pusher.transform.position.z);
 		}
 		
 	}

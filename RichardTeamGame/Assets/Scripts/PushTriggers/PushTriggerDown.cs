@@ -5,6 +5,7 @@ public class PushTriggerDown : MonoBehaviour {
 	public GameObject pusher;
 	private bool pushOn = false;
 	private float startLocation;
+	public float endLocation = 10f;
 	
 	
 	// Use this for initialization
@@ -19,8 +20,15 @@ public class PushTriggerDown : MonoBehaviour {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
 			pusher.rigidbody2D.velocity = new Vector2 ( rigidbody2D.velocity.x, -3);
 		}
+		if (pushOn && pusher.transform.position.y < endLocation) {
+			pusher.transform.position = new Vector3 (pusher.transform.position.x,endLocation, pusher.transform.position.z);
+		}
 		if (!pushOn && pusher.transform.position.y < startLocation) {
 			pusher.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 3);
+		}
+
+		if (!pushOn && pusher.transform.position.y > startLocation) {
+			pusher.transform.position = new Vector3 (pusher.transform.position.x,startLocation, pusher.transform.position.z);
 		}
 		
 	}
