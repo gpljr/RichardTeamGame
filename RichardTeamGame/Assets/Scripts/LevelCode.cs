@@ -30,6 +30,14 @@ public class LevelCode : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
+				if(Input.GetKeyDown(KeyCode.Escape)){
+					Application.Quit();
+				}
+
+				if (Input.GetKeyDown (KeyCode.Backspace)) {
+			Application.LoadLevel ("StartScreen");
+				}
+
 				if (playerOneEnter && playerTwoEnter) {
 						Application.LoadLevel (Application.loadedLevel + 1);
 				}

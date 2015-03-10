@@ -1193,6 +1193,11 @@ Prefab:
       propertyPath: m_Name
       value: UnionCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1328bf4810019bb4ea4e47ed399ee4d3,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
   m_RootGameObject: {fileID: 1170483091}
@@ -6241,7 +6246,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 9e0beb3c04ae05f4ebfdbee555ce82ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1328bf4810019bb4ea4e47ed399ee4d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1170483096
 Transform:

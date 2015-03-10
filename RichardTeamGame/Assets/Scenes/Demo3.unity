@@ -2674,7 +2674,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 466bc0e544f7c254b8ea7f48b5907a42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4a9d86da3ae87f44bba93379c6ebb3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &415571872
 Transform:
@@ -3257,6 +3257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!212 &541975552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3578,6 +3579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029bc772547149149a339c7523226e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgMusic: {fileID: 0}
+  bgMusicSad: {fileID: 0}
+  bgMusicHappy: {fileID: 0}
 --- !u!4 &559211311
 Transform:
   m_ObjectHideFlags: 0
@@ -4197,6 +4201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!212 &624067478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9983,6 +9988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &1735374067
 CircleCollider2D:
   m_ObjectHideFlags: 0
