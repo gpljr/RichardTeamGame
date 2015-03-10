@@ -16,7 +16,6 @@ public class LevelCode : MonoBehaviour
 		{
 				if (playerOneEnter && playerTwoEnter) {
 						Application.LoadLevel (Application.loadedLevel + 1);
-						print ("next level");
 				}
 				if (Application.loadedLevelName == "StartScreen") {
 						if (Input.anyKeyDown) {
@@ -25,6 +24,11 @@ public class LevelCode : MonoBehaviour
 				}
 				if (Input.GetKeyDown (KeyCode.N)) {
 						Application.LoadLevel (Application.loadedLevel + 1);
+				}
+				if (Application.loadedLevelName == "reunion2" || Application.loadedLevelName == "reunion3") {
+						if (playerOneEnter) {
+								Application.LoadLevel (Application.loadedLevel + 1);
+						}
 				}
 		}
 		void OnEnable ()
