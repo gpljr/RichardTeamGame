@@ -42,7 +42,7 @@ public class CameraFollow : MonoBehaviour
 				if (boxDistance < 20f) {
 						cameraZ = -20;
 				} else if (boxDistance > 20f) {
-						cameraZ = (-20f - (boxDistance - 20f));
+						cameraZ = (-20f - ((boxDistance - 20f)*(2f)));
 				}
 
 				this.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
