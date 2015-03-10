@@ -13,7 +13,7 @@ public class CameraFollowSplit : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				this.transform.position = new Vector3 (Player.position.x, Player.position.y, -20f);
+				this.transform.position = new Vector3 (Player.position.x, Player.position.y, -17f);
 
 		}
 }

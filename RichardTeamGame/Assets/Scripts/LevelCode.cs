@@ -4,11 +4,27 @@ using System.Collections;
 public class LevelCode : MonoBehaviour
 {
 		private bool playerOneEnter, playerTwoEnter;
-
+		public GameObject bgMusic;
+		public GameObject bgMusicSad;
+		public GameObject bgMusicHappy;
 		// Use this for initialization
 		void Start ()
 		{
-	
+				if (Application.loadedLevelName == "StartScreen") {
+						DontDestroyOnLoad (bgMusic);
+				}
+				if (Application.loadedLevelName == "sadBegin") {
+						DontDestroyOnLoad (bgMusicSad);
+						Application.LoadLevel (Application.loadedLevel + 1);
+				}
+				if (Application.loadedLevelName == "happyBegin") {
+						DontDestroyOnLoad (bgMusicHappy);
+						Application.LoadLevel (Application.loadedLevel + 1);
+				}
+				if (Application.loadedLevelName == "beforeReunion1") {
+						Application.LoadLevel (Application.loadedLevel + 1);
+				}
+
 		}
 	
 		// Update is called once per frame

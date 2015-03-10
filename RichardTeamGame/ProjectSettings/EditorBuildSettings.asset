@@ -24,6 +24,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoSeparation.unity
   - enabled: 1
+    path: Assets/Scenes/sadBegin.unity
+  - enabled: 1
+    path: Assets/Scenes/Separation2.unity
+  - enabled: 1
+    path: Assets/Scenes/beforeReunion1.unity
+  - enabled: 1
+    path: Assets/Scenes/reunion.unity
+  - enabled: 1
+    path: Assets/Scenes/happyBegin.unity
+  - enabled: 1
     path: Assets/Scenes/reunion2.unity
   - enabled: 1
     path: Assets/Scenes/reunion3.unity

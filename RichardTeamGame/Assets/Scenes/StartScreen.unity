@@ -117,6 +117,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
+      propertyPath: bgMusic
+      value: 
+      objectReference: {fileID: 980294720}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
   m_RootGameObject: {fileID: 1934510404}
@@ -131,8 +135,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 980294722}
   - 82: {fileID: 980294721}
+  - 114: {fileID: 980294723}
   m_Layer: 0
-  m_Name: bensound-funkyelement
+  m_Name: BgMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +151,7 @@ AudioSource:
   m_GameObject: {fileID: 980294720}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: b08ce8089014d804fb6f707a4cecb67b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00ac1cfcd29ccee48807a28a1256f06d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -208,6 +213,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &980294723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980294720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488dfbd643e2f8d4bb615e54632d009c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1500505768
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029bc772547149149a339c7523226e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgMusic: {fileID: 980294720}
+  bgMusicSad: {fileID: 0}
+  bgMusicHappy: {fileID: 0}
 --- !u!4 &1934510406
 Transform:
   m_ObjectHideFlags: 0
