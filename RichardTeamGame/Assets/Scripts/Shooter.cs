@@ -18,7 +18,7 @@ public class Shooter : MonoBehaviour
 				movingTime = 2f;
 		private float timeBetweenMoving = 2f;
 		private int moving1 = 1;
-
+		public AudioClip shootAudio;
 		// Use this for initialization
 		void Start ()
 		{
@@ -33,6 +33,7 @@ public class Shooter : MonoBehaviour
 
 				if (timeBetweenShots < 0) {
 						Instantiate (BulletType, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+						AudioSource.PlayClipAtPoint (shootAudio, this.transform.position);
 						timeBetweenShots = shotTime;
 				}
 				if (canMove) {

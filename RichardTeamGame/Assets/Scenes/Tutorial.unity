@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!1001 &349512494
 Prefab:
   m_ObjectHideFlags: 0
@@ -2061,6 +2062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &453145228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4823,6 +4825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &1222263683
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5308,6 +5311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!1 &1304188169
 GameObject:
   m_ObjectHideFlags: 0

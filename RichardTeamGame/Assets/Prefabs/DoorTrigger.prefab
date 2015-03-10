@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

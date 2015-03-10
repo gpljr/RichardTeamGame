@@ -1892,6 +1892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!212 &131159944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3161,6 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReunion: 0
+  nextLevelAudio: {fileID: 8300000, guid: 073f2d3f41c29bf42b83602ac44691e5, type: 3}
 --- !u!212 &274440005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3462,6 +3464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &294783295
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5042,6 +5045,7 @@ MonoBehaviour:
   canMove: 0
   movingVelocity: {x: 1, y: 0}
   movingTime: 2
+  shootAudio: {fileID: 8300000, guid: 130d4edf37e116f43b105e74cfde54f0, type: 3}
 --- !u!61 &431929939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6425,6 +6429,7 @@ MonoBehaviour:
   canMove: 0
   movingVelocity: {x: 1, y: 0}
   movingTime: 2
+  shootAudio: {fileID: 8300000, guid: 130d4edf37e116f43b105e74cfde54f0, type: 3}
 --- !u!212 &572879917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13592,6 +13597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &1359921046
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16882,7 +16888,7 @@ AudioSource:
     type: 2}
   m_PrefabInternal: {fileID: 2135211104}
   m_GameObject: {fileID: 1768011346}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: b08ce8089014d804fb6f707a4cecb67b, type: 3}
   m_PlayOnAwake: 1
@@ -19117,6 +19123,7 @@ MonoBehaviour:
   canMove: 0
   movingVelocity: {x: 1, y: 0}
   movingTime: 2
+  shootAudio: {fileID: 8300000, guid: 130d4edf37e116f43b105e74cfde54f0, type: 3}
 --- !u!212 &2032050972
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20179,6 +20186,10 @@ Prefab:
       propertyPath: Player2
       value: 
       objectReference: {fileID: 833166184}
+    - target: {fileID: 8200000, guid: 479d7fc1c0baae14eb0124c90b7b4802, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 479d7fc1c0baae14eb0124c90b7b4802, type: 2}
   m_RootGameObject: {fileID: 1768011346}

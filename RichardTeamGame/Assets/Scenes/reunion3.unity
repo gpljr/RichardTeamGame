@@ -501,6 +501,10 @@ Prefab:
       propertyPath: Player2
       value: 
       objectReference: {fileID: 1170483096}
+    - target: {fileID: 8200000, guid: 479d7fc1c0baae14eb0124c90b7b4802, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 479d7fc1c0baae14eb0124c90b7b4802, type: 2}
   m_RootGameObject: {fileID: 348413195}
@@ -5376,6 +5380,7 @@ MonoBehaviour:
   canMove: 0
   movingVelocity: {x: 0, y: 1}
   movingTime: 2
+  shootAudio: {fileID: 8300000, guid: 130d4edf37e116f43b105e74cfde54f0, type: 3}
 --- !u!61 &1035613654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5569,6 +5574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStayTrigger: 0
   isTriggered: 0
+  doorAudio: {fileID: 8300000, guid: b6ea8bdc46ea5cf42b434838ebbd1476, type: 3}
 --- !u!58 &1081948489
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6792,6 +6798,7 @@ MonoBehaviour:
   canMove: 0
   movingVelocity: {x: 1, y: 0}
   movingTime: 2
+  shootAudio: {fileID: 8300000, guid: 130d4edf37e116f43b105e74cfde54f0, type: 3}
 --- !u!61 &1271724365
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class LevelDoor : MonoBehaviour
 		[SerializeField]
 		private bool
 				isReunion;
+		public AudioClip nextLevelAudio;
 		// Use this for initialization
 		void Start ()
 		{
@@ -21,12 +22,14 @@ public class LevelDoor : MonoBehaviour
 		{
 				if (other.gameObject.tag == "Player1") {
 						Events.g.Raise (new PlayerEnterLevelDoorEvent (isPlayerOne: true));
+						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position);
 						if (isReunion) {
 								other.isTrigger = true;
 						}
 				}
 				if (other.gameObject.tag == "Player2") {
 						Events.g.Raise (new PlayerEnterLevelDoorEvent (isPlayerOne: false));
+						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position);
 						if (isReunion) {
 								other.isTrigger = true;
 						}
