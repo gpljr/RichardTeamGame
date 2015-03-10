@@ -23,6 +23,9 @@ public class LevelCode : MonoBehaviour
 								Application.LoadLevel (Application.loadedLevel + 1);
 						}
 				}
+				if (Input.GetKeyDown (KeyCode.N)) {
+						Application.LoadLevel (Application.loadedLevel + 1);
+				}
 		}
 		void OnEnable ()
 		{

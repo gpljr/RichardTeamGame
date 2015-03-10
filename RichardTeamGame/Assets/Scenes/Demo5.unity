@@ -2549,7 +2549,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
       propertyPath: shotTime
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
@@ -2880,6 +2880,10 @@ Prefab:
     - target: {fileID: 400000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
       propertyPath: m_RootOrder
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
+      propertyPath: shotTime
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
@@ -4907,6 +4911,7 @@ GameObject:
   - 212: {fileID: 431929936}
   - 114: {fileID: 431929938}
   - 61: {fileID: 431929939}
+  - 50: {fileID: 431929940}
   m_Layer: 0
   m_Name: ShooterUp
   m_TagString: Untagged
@@ -4962,7 +4967,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletType: {fileID: 100000, guid: 9d7810b060c0c3443a16fdf5745cc1c5, type: 2}
-  shotTime: 3
+  shotTime: 3.5
+  canMove: 0
+  movingVelocity: {x: 1, y: 0}
+  movingTime: 2
 --- !u!61 &431929939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4975,6 +4983,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!50 &431929940
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: aef4066ef803ef64a944d66ad66af33b,
+    type: 2}
+  m_PrefabInternal: {fileID: 240259926}
+  m_GameObject: {fileID: 431929935}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &437910378
 GameObject:
   m_ObjectHideFlags: 0
@@ -6304,6 +6328,7 @@ GameObject:
   - 212: {fileID: 572879917}
   - 114: {fileID: 572879916}
   - 61: {fileID: 572879919}
+  - 50: {fileID: 572879920}
   m_Layer: 0
   m_Name: ShooterUp
   m_TagString: Untagged
@@ -6324,7 +6349,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletType: {fileID: 100000, guid: 9d7810b060c0c3443a16fdf5745cc1c5, type: 2}
-  shotTime: 2
+  shotTime: 2.5
+  canMove: 0
+  movingVelocity: {x: 1, y: 0}
+  movingTime: 2
 --- !u!212 &572879917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6372,6 +6400,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!50 &572879920
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: aef4066ef803ef64a944d66ad66af33b,
+    type: 2}
+  m_PrefabInternal: {fileID: 200934214}
+  m_GameObject: {fileID: 572879915}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &574476433
 GameObject:
   m_ObjectHideFlags: 0
@@ -16944,7 +16988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
       propertyPath: shotTime
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aef4066ef803ef64a944d66ad66af33b, type: 2}
@@ -18960,6 +19004,7 @@ GameObject:
   - 212: {fileID: 2032050972}
   - 114: {fileID: 2032050971}
   - 61: {fileID: 2032050974}
+  - 50: {fileID: 2032050975}
   m_Layer: 0
   m_Name: ShooterUp
   m_TagString: Untagged
@@ -18980,7 +19025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletType: {fileID: 100000, guid: 9d7810b060c0c3443a16fdf5745cc1c5, type: 2}
-  shotTime: 2.5
+  shotTime: 3
+  canMove: 0
+  movingVelocity: {x: 1, y: 0}
+  movingTime: 2
 --- !u!212 &2032050972
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19028,6 +19076,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!50 &2032050975
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: aef4066ef803ef64a944d66ad66af33b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794820567}
+  m_GameObject: {fileID: 2032050970}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &2033937077
 Prefab:
   m_ObjectHideFlags: 0
