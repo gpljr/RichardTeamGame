@@ -6,7 +6,7 @@ public class PushTriggerLeft : MonoBehaviour {
 	public GameObject pusher;
 	private bool pushOn = false;
 	private float startLocation;
-	private float endLocation = 10f;
+	public float endLocation = 10f;
 	
 	
 	// Use this for initialization
@@ -21,7 +21,7 @@ public class PushTriggerLeft : MonoBehaviour {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
 			pusher.rigidbody2D.velocity = new Vector2 (-3f, rigidbody2D.velocity.y);
 		}
-		if (pushOn && pusher.transform.position.y < endLocation) {
+		if (pushOn && pusher.transform.position.x < endLocation) {
 			pusher.transform.position = new Vector3 (endLocation,pusher.transform.position.y, pusher.transform.position.z);
 		}
 

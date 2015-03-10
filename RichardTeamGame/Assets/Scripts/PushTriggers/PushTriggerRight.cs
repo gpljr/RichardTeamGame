@@ -20,7 +20,7 @@ public class PushTriggerRight : MonoBehaviour {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
 			pusher.rigidbody2D.velocity = new Vector2 ( 3f, rigidbody2D.velocity.y);
 		}
-		if (pushOn && pusher.transform.position.y > endLocation) {
+		if (pushOn && pusher.transform.position.x > endLocation) {
 			pusher.transform.position = new Vector3 (endLocation,pusher.transform.position.y, pusher.transform.position.z);
 		}
 		if (!pushOn && pusher.transform.position.x > startLocation) {

@@ -7111,6 +7111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 662971493}
+  endLocation: 10
 --- !u!50 &629627672
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -12715,6 +12716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8f5ea6141f09048ae33debc7fc2489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReunion: 0
 --- !u!1 &1029923589
 GameObject:
   m_ObjectHideFlags: 0
@@ -17823,6 +17825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 637496806}
+  endLocation: 10
 --- !u!50 &1396102622
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19683,6 +19686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8f5ea6141f09048ae33debc7fc2489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReunion: 0
 --- !u!1001 &1573115579
 Prefab:
   m_ObjectHideFlags: 0

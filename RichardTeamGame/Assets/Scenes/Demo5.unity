@@ -575,6 +575,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 298136659}
+    - target: {fileID: 11400000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
+      propertyPath: endLocation
+      value: 14.8500004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
   m_RootGameObject: {fileID: 2145921467}
@@ -953,6 +957,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 1000442051}
+    - target: {fileID: 11400000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
+      propertyPath: endLocation
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
   m_RootGameObject: {fileID: 1829394146}
@@ -1331,6 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 477963575}
+  endLocation: 15.8500004
 --- !u!50 &87382010
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1499,7 +1508,7 @@ Transform:
   m_PrefabInternal: {fileID: 471057848}
   m_GameObject: {fileID: 91401097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.2000008, y: -3.20000005, z: 0}
+  m_LocalPosition: {x: 21.0522556, y: -3.20000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1843,6 +1852,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 91401097}
+    - target: {fileID: 11400000, guid: 294dbc0fef090dd458bd8223997ea6bc, type: 2}
+      propertyPath: endLocation
+      value: 15.8500004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 294dbc0fef090dd458bd8223997ea6bc, type: 2}
   m_RootGameObject: {fileID: 506588022}
@@ -2504,6 +2517,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 1231383308}
+    - target: {fileID: 11400000, guid: 2a33c1e773a0cad4fa883f19a728ed29, type: 2}
+      propertyPath: endLocation
+      value: -14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a33c1e773a0cad4fa883f19a728ed29, type: 2}
   m_RootGameObject: {fileID: 953294076}
@@ -4099,7 +4116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
-  CheatIndicator: {fileID: 0}
+  CheatIndicator: {fileID: 427745121}
 --- !u!61 &358161956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5234,7 +5251,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 59113e6a8da8dc347832057a08c985e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 20.2000008
+      value: 21.0522556
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59113e6a8da8dc347832057a08c985e1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5439,7 +5456,7 @@ Transform:
   m_PrefabInternal: {fileID: 663563819}
   m_GameObject: {fileID: 477963575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.2000008, y: 3.20000005, z: 0}
+  m_LocalPosition: {x: 21.0152016, y: 3.20000029, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5712,6 +5729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 91401097}
+  endLocation: 15.8500004
 --- !u!50 &506588024
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7683,11 +7701,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 59113e6a8da8dc347832057a08c985e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 20.2000008
+      value: 21.0152016
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59113e6a8da8dc347832057a08c985e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.20000005
+      value: 3.20000029
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59113e6a8da8dc347832057a08c985e1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8375,7 +8393,7 @@ Transform:
   m_PrefabInternal: {fileID: 1919479347}
   m_GameObject: {fileID: 715628125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.8000002, y: -6.4000001, z: 0}
+  m_LocalPosition: {x: 13.0589123, y: -6.40000057, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9174,7 +9192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed2: 10
-  CheatIndicator: {fileID: 0}
+  CheatIndicator: {fileID: 427745121}
 --- !u!212 &833166183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9431,6 +9449,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 715628125}
+    - target: {fileID: 11400000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
+      propertyPath: endLocation
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d11e30fdeeb95a4995a9fd0341c75d5, type: 2}
   m_RootGameObject: {fileID: 2077418532}
@@ -10192,7 +10214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 1231383308}
-  endLocation: 10
+  endLocation: -14
 --- !u!50 &953294078
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10656,7 +10678,7 @@ Transform:
   m_PrefabInternal: {fileID: 1587285562}
   m_GameObject: {fileID: 1000442051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.8000002, y: 0, z: 0}
+  m_LocalPosition: {x: 13.0589094, y: 7.15255737e-07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14642,6 +14664,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
+      propertyPath: CheatIndicator
+      value: 
+      objectReference: {fileID: 427745121}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4577dea49b88d4c45a2f86e14c016c27, type: 2}
   m_RootGameObject: {fileID: 358161954}
@@ -15366,11 +15392,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.8000002
+      value: 13.0589094
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.15255737e-07
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15824,6 +15850,10 @@ Prefab:
       propertyPath: pusher
       value: 
       objectReference: {fileID: 477963575}
+    - target: {fileID: 11400000, guid: 294dbc0fef090dd458bd8223997ea6bc, type: 2}
+      propertyPath: endLocation
+      value: 15.8500004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 294dbc0fef090dd458bd8223997ea6bc, type: 2}
   m_RootGameObject: {fileID: 87382006}
@@ -17272,7 +17302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 1000442051}
-  endLocation: 10
+  endLocation: 18
 --- !u!50 &1829394148
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18326,11 +18356,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.8000002
+      value: 13.0589123
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.4000001
+      value: -6.40000057
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3743963c1019294398d2efb53198c58, type: 2}
       propertyPath: m_LocalPosition.z
@@ -19484,7 +19514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 715628125}
-  endLocation: 10
+  endLocation: 18
 --- !u!50 &2077418534
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19803,6 +19833,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0f0f1334566a655438b9422fbd50aedd, type: 2}
+      propertyPath: CheatIndicator
+      value: 
+      objectReference: {fileID: 427745121}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0f1334566a655438b9422fbd50aedd, type: 2}
   m_RootGameObject: {fileID: 833166179}
@@ -20290,7 +20324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher: {fileID: 298136659}
-  endLocation: 10
+  endLocation: 14.8500004
 --- !u!50 &2145921469
 Rigidbody2D:
   m_ObjectHideFlags: 0
