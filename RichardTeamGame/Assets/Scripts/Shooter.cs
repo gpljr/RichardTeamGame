@@ -39,9 +39,9 @@ public class Shooter : MonoBehaviour
 						timeBetweenMoving -= Time.deltaTime;
 						if (timeBetweenMoving < 0) {
 								if (moving1 == 1) {
-										this.rigidbody2D.velocity = movingVelocity;
+										this.GetComponent<Rigidbody2D>().velocity = movingVelocity;
 								} else if (moving1 == -1) {
-										this.rigidbody2D.velocity = -movingVelocity;
+										this.GetComponent<Rigidbody2D>().velocity = -movingVelocity;
 								}
 								moving1 *= -1;
 								timeBetweenMoving = movingTime;

@@ -47,12 +47,12 @@ public class Shield : MonoBehaviour {
 
 		timeUntilBulletStorm -= Time.deltaTime;
 		if (timeUntilBulletStorm > 0) {
-			GameObject.FindWithTag ("Timer").guiText.text = timeUntilBulletStorm.ToString ("f0");
+			GameObject.FindWithTag ("Timer").GetComponent<GUIText>().text = timeUntilBulletStorm.ToString ("f0");
 				}
 		if (timeUntilBulletStorm < 0) {
 			bulletStorm = true;
 			ShieldPowerUpGenerator.generate = false;
-			GameObject.FindWithTag ("Timer").guiText.text = "BULLETSTORM!!!";
+			GameObject.FindWithTag ("Timer").GetComponent<GUIText>().text = "BULLETSTORM!!!";
 				}
 
 

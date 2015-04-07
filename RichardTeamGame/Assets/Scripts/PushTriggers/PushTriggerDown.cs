@@ -18,13 +18,13 @@ public class PushTriggerDown : MonoBehaviour {
 		
 		if (pushOn) {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
-			pusher.rigidbody2D.velocity = new Vector2 ( rigidbody2D.velocity.x, -3);
+			pusher.GetComponent<Rigidbody2D>().velocity = new Vector2 ( GetComponent<Rigidbody2D>().velocity.x, -3);
 		}
 		if (pushOn && pusher.transform.position.y < endLocation) {
 			pusher.transform.position = new Vector3 (pusher.transform.position.x,endLocation, pusher.transform.position.z);
 		}
 		if (!pushOn && pusher.transform.position.y < startLocation) {
-			pusher.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 3);
+			pusher.GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, 3);
 		}
 
 		if (!pushOn && pusher.transform.position.y > startLocation) {

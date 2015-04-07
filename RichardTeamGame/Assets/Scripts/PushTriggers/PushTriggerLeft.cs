@@ -19,14 +19,14 @@ public class PushTriggerLeft : MonoBehaviour {
 		
 		if (pushOn) {
 			//pusher.transform.position += new Vector3(0,0.1f,0);
-			pusher.rigidbody2D.velocity = new Vector2 (-3f, rigidbody2D.velocity.y);
+			pusher.GetComponent<Rigidbody2D>().velocity = new Vector2 (-3f, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		if (pushOn && pusher.transform.position.x < endLocation) {
 			pusher.transform.position = new Vector3 (endLocation,pusher.transform.position.y, pusher.transform.position.z);
 		}
 
 		if (!pushOn && pusher.transform.position.x < startLocation) {
-			pusher.rigidbody2D.velocity = new Vector2 (3f, rigidbody2D.velocity.y);
+			pusher.GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		if (!pushOn && pusher.transform.position.x > startLocation) {
 			pusher.transform.position = new Vector3 (startLocation,pusher.transform.position.y, pusher.transform.position.z);

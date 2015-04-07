@@ -16,13 +16,13 @@ public class AutoPusherUp : MonoBehaviour {
 	void Update () {
 		
 		if (change && this.transform.position.y < endLocation) {
-			this.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 3f);
+			this.GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, 3f);
 		}
 		if (change && this.transform.position.y > endLocation) {
 			change = false;
 		}
 		if (!change && this.transform.position.y > startLocation) {
-			this.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, -3f);
+			this.GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, -3f);
 		}
 		if (!change && this.transform.position.y < startLocation) {
 			change = true;

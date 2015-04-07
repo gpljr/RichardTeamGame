@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Movement2 : MonoBehaviour {
+public class OLDMovement2 : MonoBehaviour {
 
 	public float maxSpeed2 = 10f;
 
@@ -25,15 +25,15 @@ public class Movement2 : MonoBehaviour {
 		
 						float moveV = Input.GetAxis ("Vertical1");
 		
-						rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveV * maxSpeed2);
+						GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveV * maxSpeed2);
 				} else if (cheatMode) {
 			float move = Input.GetAxis ("Horizontal1");
 		
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed2, rigidbody2D.velocity.y);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed2, GetComponent<Rigidbody2D>().velocity.y);
 			
 			float moveV = Input.GetAxis ("Vertical1");
 			
-			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveV * maxSpeed2);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveV * maxSpeed2);
 				}
 	}
 
