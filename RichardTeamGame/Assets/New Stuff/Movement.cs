@@ -39,7 +39,7 @@ public class Movement : MonoBehaviour {
 		if (Mathf.Abs (transform.position.x - target.transform.position.x) > 0.1 || Mathf.Abs (transform.position.y - target.transform.position.y) > 0.1) {
 			go1 = true;
 		}
-		if (Mathf.Abs (transform.position.x - target.transform.position.x) < 0.1 && Mathf.Abs (transform.position.y - target.transform.position.y) < 0.1) {
+		if (Mathf.Abs (transform.position.x - target.transform.position.x) < 0.1f && Mathf.Abs (transform.position.y - target.transform.position.y) < 0.1f) {
 			go1 = false;
 		}
 
