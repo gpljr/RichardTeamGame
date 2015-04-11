@@ -11,6 +11,11 @@ TagManager:
   - BulletDestroyer
   - Timer
   - Border
+  - PusherLEFT
+  - PusherRIGHT
+  - PusherUP
+  - PusherDOWN
+  - PusherEDGE
   layers:
   - Default
   - TransparentFX

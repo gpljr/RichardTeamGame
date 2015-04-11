@@ -68,5 +68,15 @@ public class Checker2 : MonoBehaviour {
 				}
 			}
 		}
+		if (other.gameObject.tag == "PusherEDGE") {
+			this.transform.position = new Vector3(tempx2,tempy2,tempz2);
+		}
+		else if (other.gameObject.tag == "PusherUP") {
+			this.transform.position += new Vector3(0,3.2f,0);
+				}
+		else if (other.gameObject.tag == "PusherDOWN") {
+			this.transform.position += new Vector3(0,-3.2f,0);
+				}
+
 	}
 }
