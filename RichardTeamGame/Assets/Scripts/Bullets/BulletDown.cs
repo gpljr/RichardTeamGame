@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletDown : MonoBehaviour
 {
 		public AudioClip explosionAudio;
+		private float volume = 1f;
 		// Use this for initialization
 		void Start ()
 		{
@@ -21,7 +22,7 @@ public class BulletDown : MonoBehaviour
 		void OnTriggerEnter2D (Collider2D other)
 		{
 				if (other.gameObject.tag == "Player1" || other.gameObject.tag == "Player2") {
-						AudioSource.PlayClipAtPoint (explosionAudio, this.transform.position);
+						AudioSource.PlayClipAtPoint (explosionAudio, this.transform.position, volume);
 						Application.LoadLevel (Application.loadedLevel);
 				}
 				if (other.gameObject.tag == "BulletDestroyer") {

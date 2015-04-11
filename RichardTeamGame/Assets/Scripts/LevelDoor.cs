@@ -7,6 +7,7 @@ public class LevelDoor : MonoBehaviour
 		private bool
 				isReunion;
 		public AudioClip nextLevelAudio;
+		private float volume = 1f;
 		// Use this for initialization
 		void Start ()
 		{
@@ -22,7 +23,7 @@ public class LevelDoor : MonoBehaviour
 		{
 				if (other.gameObject.tag == "Player1") {
 						Events.g.Raise (new PlayerEnterLevelDoorEvent (isPlayerOne: true));
-						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position);
+						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position, volume);
 						if (isReunion) {
 								other.isTrigger = true;
 						}

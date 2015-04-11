@@ -10,6 +10,7 @@ public class TriggerForDoorTemporary : MonoBehaviour
 		public bool
 				isTriggered;
 		public AudioClip doorAudio;
+		private float volume = 1f;
 		// Use this for initialization
 		void Start ()
 		{
@@ -25,7 +26,7 @@ public class TriggerForDoorTemporary : MonoBehaviour
 		{
 				if (other.gameObject.tag == "Player1" || other.gameObject.tag == "Player2") {
 						isTriggered = true;
-						AudioSource.PlayClipAtPoint (doorAudio, this.transform.position);
+						AudioSource.PlayClipAtPoint (doorAudio, this.transform.position, volume);
 				}
 		}
 		void OnTriggerExit2D (Collider2D other)

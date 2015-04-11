@@ -10,11 +10,12 @@ public class LevelCode : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
+				/*
 				if (Application.loadedLevelName == "StartScreen") {
 						DontDestroyOnLoad (bgMusic);
-				}
+				}*/
 				if (Application.loadedLevelName == "sadBegin") {
-						DontDestroyOnLoad (bgMusicSad);
+						//DontDestroyOnLoad (bgMusicSad);
 						Application.LoadLevel (Application.loadedLevel + 1);
 				}
 				if (Application.loadedLevelName == "happyBegin") {
@@ -30,12 +31,12 @@ public class LevelCode : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				if(Input.GetKeyDown(KeyCode.Escape)){
-					Application.Quit();
+				if (Input.GetKeyDown (KeyCode.Escape)) {
+						Application.Quit ();
 				}
 
 				if (Input.GetKeyDown (KeyCode.Backspace)) {
-			Application.LoadLevel ("StartScreen");
+						Application.LoadLevel ("StartScreen");
 				}
 
 				if (playerOneEnter && playerTwoEnter) {

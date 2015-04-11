@@ -3956,7 +3956,7 @@ Transform:
   - {fileID: 1725522406}
   - {fileID: 1224079871}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1001 &1455822434
 Prefab:
   m_ObjectHideFlags: 0
@@ -4764,7 +4764,7 @@ Transform:
   - {fileID: 1749094783}
   - {fileID: 138497940}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &1823984242
 Prefab:
   m_ObjectHideFlags: 0
@@ -5789,7 +5789,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 223d72abd5a71c040b7c235c18ebe764, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 223d72abd5a71c040b7c235c18ebe764, type: 2}
       propertyPath: Player
