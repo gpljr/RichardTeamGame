@@ -16,6 +16,7 @@ TagManager:
   - PusherUP
   - PusherDOWN
   - PusherEDGE
+  - Fade
   layers:
   - Default
   - TransparentFX
