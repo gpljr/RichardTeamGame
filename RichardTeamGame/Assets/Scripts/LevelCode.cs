@@ -1,42 +1,49 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class LevelCode : MonoBehaviour
 {
+    [SerializeField]
+    float
+        _timeToFadeIn ;
+    [SerializeField]
+    float
+        _timeToFadeOut ;
+    [SerializeField]
+    AnimationCurve
+        _fadeCurve;
+    private Image _image;
+
     private bool playerOneEnter, playerTwoEnter;
 
-    public float fadeSpeed = 1.5f;          // Speed that the screen fades to and from black.
-
-    //var fadeImage;
-    private bool sceneStarting = true;      // Whether or not the scene is still fading in.
     // Use this for initialization
     void Start()
     {
         if (Application.loadedLevelName == "sadBegin")
         {
-						
+		
             Application.LoadLevel(Application.loadedLevel + 1);
-        }
+        } 
         if (Application.loadedLevelName == "happyBegin")
         {
 						
             Application.LoadLevel(Application.loadedLevel + 1);
-        }
+        } 
         if (Application.loadedLevelName == "beforeReunion1")
         {
             Application.LoadLevel(Application.loadedLevel + 1);
-        }
-        //fadeImage = GameObject.FindWithTag ("Fade").GetComponent<Image> ();
-
+        } 
+        _image = GameObject.FindWithTag("Fade").GetComponent<Image>();
+        StartScene();
     }
 	
     // Update is called once per frame
     void Update()
     {
-        if (sceneStarting)
-        {
-            StartScene();
-        }
+
+            
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
@@ -62,11 +69,22 @@ public class LevelCode : MonoBehaviour
         {
             EndScene();
         }
-        if (Application.loadedLevelName == "reunion2" || Application.loadedLevelName == "reunion3")
+        if (Application.loadedLevelName == "reunion3")
         {
             if (playerOneEnter)
             {
                 EndScene();
+            }
+        }
+        if (Application.loadedLevelName == "Demo5")
+        {
+            Application.LoadLevel(Application.loadedLevel + 1);
+        }
+        if (Application.loadedLevelName == "reunion2")
+        {
+            if (playerOneEnter)
+            {
+                Application.LoadLevel(Application.loadedLevel + 1);
             }
         }
     }
@@ -102,51 +120,51 @@ public class LevelCode : MonoBehaviour
         }
     }
 
-    void FadeToClear()
-    {
-        // Lerp the colour of the texture between itself and transparent.
-        GUI.color = Color.Lerp(GUI.color, Color.clear, fadeSpeed * Time.deltaTime);
-    }
-	
-	
-    void FadeToBlack()
-    {
-        // Lerp the colour of the texture between itself and black.
-        GUI.color = Color.Lerp(GUI.color, Color.black, fadeSpeed * Time.deltaTime);
-    }
-	
-	
     void StartScene()
     {
-        // Fade the texture to clear.
-        FadeToClear();
-		
-        // If the texture is almost clear...
-        if (GUI.color.a <= 0.05f)
-        {
-            // ... set the colour to clear and disable the GUITexture.
-            GUI.color = Color.clear;
-            GUI.enabled = false;
-
-            // The scene is no longer starting.
-            sceneStarting = false;
-        }
+        StartCoroutine(Fade(_timeToFadeIn, _fadeCurve, fadeIn: true));
     }
-	
-	
+
+    private IEnumerator Fade(float timerDuration, AnimationCurve curve, bool fadeIn)
+    {
+        Color startColor = _image.color;
+        Color newColor;
+        float alpha;
+        float timer = 0f;
+        while (timer < timerDuration)
+        {
+            timer += Time.deltaTime;
+            if (fadeIn)
+            {
+                alpha = 1f - curve.Evaluate(timer / timerDuration);
+            } else
+            {
+                alpha = curve.Evaluate(timer / timerDuration);
+            }
+            newColor = new Color(startColor.r, startColor.g, startColor.b, alpha);
+            _image.color = newColor;
+            yield return null;
+        }
+        if (fadeIn)
+        {
+            alpha = 1f - curve.Evaluate(1f);
+        } else
+        {
+            alpha = curve.Evaluate(1f);
+        }
+        newColor = new Color(startColor.r, startColor.g, startColor.b, alpha);
+        _image.color = newColor;
+    }
+    IEnumerator FadeOut(float timerDuration, AnimationCurve curve)
+    {
+        yield return StartCoroutine(Fade(timerDuration, curve, fadeIn: false));
+        Application.LoadLevel(Application.loadedLevel + 1);
+    }
+    
+
     public void EndScene()
     {
-        // Make sure the texture is enabled.
-        //GUI.enabled = true;
-		
-        // Start fading towards black.
-        //FadeToBlack ();
-		
-        // If the screen is almost black...
-        //if (GUI.color.a >= 0.95f) {
-        // ... reload the level.
-        Application.LoadLevel(Application.loadedLevel + 1);
-        //}
+        StartCoroutine(FadeOut(_timeToFadeOut, _fadeCurve));
     }
 
 }
