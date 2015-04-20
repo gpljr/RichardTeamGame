@@ -26,27 +26,33 @@ public class DetectingOthers2 : MonoBehaviour {
 		//end broadcasting position
 
 		//checking environment
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 1.5f, WhatIsCollidable2);
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 1.25f, WhatIsCollidable2);
 		Debug.DrawRay(transform.position, -Vector2.up, Color.green);
 		if (hit.collider != null) {
 			if(hit.collider.tag == "NewBorder"){
 				disableDown2= true;
 			}
+			if(hit.collider.tag == "PusherUP"){
+				transform.position += new Vector3(0f,move,0f);
+			}
 		}
 		else if (hit.collider == null) {
 			disableDown2 = false;
 		}
-		RaycastHit2D hit1 = Physics2D.Raycast(transform.position, Vector2.up, 1.5f, WhatIsCollidable2);
+		RaycastHit2D hit1 = Physics2D.Raycast(transform.position, Vector2.up, 1.25f, WhatIsCollidable2);
 		Debug.DrawRay(transform.position, Vector2.up, Color.green);
 		if (hit1.collider != null) {
 			if(hit1.collider.tag == "NewBorder"){
 				disableUp2 = true;
 			}
+			if(hit1.collider.tag == "PusherDOWN"){
+				transform.position += new Vector3(0f,-move,0f);
+			}
 		}
 		else if (hit1.collider == null) {
 			disableUp2 = false;
 		}
-		RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.right, 1.5f, WhatIsCollidable2);
+		RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.right, 1.25f, WhatIsCollidable2);
 		Debug.DrawRay(transform.position, Vector2.right, Color.green);
 		if (hit2.collider != null) {
 			if(hit2.collider.tag == "NewBorder"){
@@ -58,7 +64,7 @@ public class DetectingOthers2 : MonoBehaviour {
 			else if(hit2.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.RightArrow) && DetectingOthers.moving){
 				disableRight2 = true;
 			}
-			else if(hit2.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.RightArrow) && !DetectingOthers.moving){
+			else if(hit2.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.RightArrow) && !DetectingOthers.moving && !moving2){
 				disableRight2 = false;
 				hit2.transform.position += new Vector3(move,0f, 0f);
 			}
@@ -66,7 +72,7 @@ public class DetectingOthers2 : MonoBehaviour {
 		else if (hit2.collider == null) {
 			disableRight2 = false;
 		}
-		RaycastHit2D hit3 = Physics2D.Raycast(transform.position, -Vector2.right, 1.5f, WhatIsCollidable2);
+		RaycastHit2D hit3 = Physics2D.Raycast(transform.position, -Vector2.right, 1.25f, WhatIsCollidable2);
 		Debug.DrawRay(transform.position, -Vector2.right, Color.green);
 		if (hit3.collider != null) {
 			if(hit3.collider.tag == "NewBorder"){
@@ -78,7 +84,7 @@ public class DetectingOthers2 : MonoBehaviour {
 			else if(hit3.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.LeftArrow) && DetectingOthers.moving){
 				disableLeft2 = true;
 			}
-			else if(hit3.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.LeftArrow) && !DetectingOthers.moving){
+			else if(hit3.collider.tag == "Player1" && Input.GetKeyDown(KeyCode.LeftArrow) && !DetectingOthers.moving && !moving2){
 				disableLeft2 = false;
 				hit3.transform.position += new Vector3(-move,0f, 0f);
 			}

@@ -4,6 +4,7 @@ using System.Collections;
 public class CheckPointTrigger : MonoBehaviour {
 
 	public bool isTriggered;
+	public bool isTriggered2;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +18,11 @@ public class CheckPointTrigger : MonoBehaviour {
 
 
 	void OnTriggerEnter2D (Collider2D other){
-		if (other.gameObject.tag == "Player1" || other.gameObject.tag == "Player2") {
+		if (other.gameObject.tag == "Player1") {
 			isTriggered = true;
+			}
+		if (other.gameObject.tag == "Player2") {
+			isTriggered2 = true;
 			}
 	}
 	

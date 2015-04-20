@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour
 		void Update ()
 		{
 
-				if (Input.GetKeyDown (KeyCode.Return)) {
+				if (Input.GetKeyDown (KeyCode.H)) {
 						Application.LoadLevel (Application.loadedLevel);
 				}
 
