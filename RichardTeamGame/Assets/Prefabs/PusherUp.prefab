@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PusherUp
   m_TagString: PusherUP
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 422822}
   - 212: {fileID: 21265778}
   - 61: {fileID: 6134058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PusherEdge
   m_TagString: PusherEDGE
   m_Icon: {fileID: 0}
