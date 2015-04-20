@@ -31,10 +31,10 @@ public class CameraFollow : MonoBehaviour
 						Application.LoadLevel (Application.loadedLevel);
 				}
 
-				p1x = Movement.player1x;
-				p1y = Movement.player1y;
-				p2x = Movement2.player2x;
-				p2y = Movement2.player2y;
+				p1x = Player1.position.x;
+				p1y = Player1.position.y;
+				p2x = Player2.position.x;
+				p2y = Player2.position.y;
 
 				cameraX = (p1x + p2x) / 2;
 				cameraY = (p1y + p2y) / 2;
