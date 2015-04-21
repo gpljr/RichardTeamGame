@@ -16,11 +16,12 @@ public class LevelCode : MonoBehaviour
 		private Image _image;
 
 		private bool playerOneEnter, playerTwoEnter;
+		public bool inFading = true;
 
 		// Use this for initialization
 		void Start ()
 		{
-			Cursor.visible = false;
+				Cursor.visible = false;
 				if (Application.loadedLevelName == "sadBegin") {
 		
 						Application.LoadLevel (Application.loadedLevel + 1);
@@ -116,6 +117,9 @@ public class LevelCode : MonoBehaviour
 				Color newColor;
 				float alpha;
 				float timer = 0f;
+				if ((timer < timerDuration * 0.75f && fadeIn) || (timer < timerDuration && !fadeIn)) {
+						inFading = true;
+				}
 				while (timer < timerDuration) {
 						timer += Time.deltaTime;
 						if (fadeIn) {
@@ -127,6 +131,7 @@ public class LevelCode : MonoBehaviour
 						_image.color = newColor;
 						yield return null;
 				}
+				inFading = false;
 				if (fadeIn) {
 						alpha = 1f - curve.Evaluate (1f);
 				} else {
