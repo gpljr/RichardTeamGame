@@ -24,11 +24,36 @@ public class BgMusic : MonoBehaviour
 		void OnLevelWasLoaded (int level)
 		{
 				if (level == 9) {
-						//gameObject.GetComponent<AudioSource> ().clip = sadMusic;
-						//gameObject.GetComponent<AudioSource> ().Play ();
+						while (gameObject.GetComponent<AudioSource> ().volume > 0) {
+								gameObject.GetComponent<AudioSource> ().volume -= 0.1f * Time.deltaTime;
+								print (gameObject.GetComponent<AudioSource> ().volume);
+						
+								if (gameObject.GetComponent<AudioSource> ().volume < 0.1f) {
+										gameObject.GetComponent<AudioSource> ().clip = sadMusic;
+										gameObject.GetComponent<AudioSource> ().Play ();
+										break;
+								}
+
+						}
+						while (gameObject.GetComponent<AudioSource> ().volume < 1) {
+								gameObject.GetComponent<AudioSource> ().volume += 0.1f * Time.deltaTime;
+						}
 				} else if (level == 13) {
-						//gameObject.GetComponent<AudioSource> ().clip = happyMusic;
-						//gameObject.GetComponent<AudioSource> ().Play ();
+						while (gameObject.GetComponent<AudioSource> ().volume > 0) {
+								gameObject.GetComponent<AudioSource> ().volume -= 0.1f * Time.deltaTime;
+								print (gameObject.GetComponent<AudioSource> ().volume);
+				
+								if (gameObject.GetComponent<AudioSource> ().volume < 0.1f) {
+										gameObject.GetComponent<AudioSource> ().clip = happyMusic;
+										gameObject.GetComponent<AudioSource> ().Play ();
+										break;
+								}
+				
+						}
+						while (gameObject.GetComponent<AudioSource> ().volume < 1) {
+								gameObject.GetComponent<AudioSource> ().volume += 0.1f * Time.deltaTime;
+						}
+            
 				}
 		}
 }
