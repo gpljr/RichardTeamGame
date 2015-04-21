@@ -13,6 +13,7 @@ public class DetectingOthers2 : MonoBehaviour
 		public static float player2y;
 		private float move = 2.32f;
 		public LayerMask WhatIsCollidable2;
+		private float  length = 1.25f;
 		// Use this for initialization
 		void Start ()
 		{
@@ -30,7 +31,7 @@ public class DetectingOthers2 : MonoBehaviour
 						//end broadcasting position
 
 						//checking environment
-						RaycastHit2D hit = Physics2D.Raycast (transform.position, -Vector2.up, 1.25f, WhatIsCollidable2);
+						RaycastHit2D hit = Physics2D.Raycast (transform.position, -Vector2.up, length, WhatIsCollidable2);
 						Debug.DrawRay (transform.position, -Vector2.up, Color.green);
 						if (hit.collider != null) {
 								if (hit.collider.tag == "NewBorder") {
@@ -42,7 +43,7 @@ public class DetectingOthers2 : MonoBehaviour
 						} else if (hit.collider == null) {
 								disableDown2 = false;
 						}
-						RaycastHit2D hit1 = Physics2D.Raycast (transform.position, Vector2.up, 1.25f, WhatIsCollidable2);
+						RaycastHit2D hit1 = Physics2D.Raycast (transform.position, Vector2.up, length, WhatIsCollidable2);
 						Debug.DrawRay (transform.position, Vector2.up, Color.green);
 						if (hit1.collider != null) {
 								if (hit1.collider.tag == "NewBorder") {
@@ -54,7 +55,7 @@ public class DetectingOthers2 : MonoBehaviour
 						} else if (hit1.collider == null) {
 								disableUp2 = false;
 						}
-						RaycastHit2D hit2 = Physics2D.Raycast (transform.position, Vector2.right, 1.25f, WhatIsCollidable2);
+						RaycastHit2D hit2 = Physics2D.Raycast (transform.position, Vector2.right, length, WhatIsCollidable2);
 						Debug.DrawRay (transform.position, Vector2.right, Color.green);
 						if (hit2.collider != null) {
 								if (hit2.collider.tag == "NewBorder") {
@@ -71,7 +72,7 @@ public class DetectingOthers2 : MonoBehaviour
 						} else if (hit2.collider == null) {
 								disableRight2 = false;
 						}
-						RaycastHit2D hit3 = Physics2D.Raycast (transform.position, -Vector2.right, 1.25f, WhatIsCollidable2);
+						RaycastHit2D hit3 = Physics2D.Raycast (transform.position, -Vector2.right, length, WhatIsCollidable2);
 						Debug.DrawRay (transform.position, -Vector2.right, Color.green);
 						if (hit3.collider != null) {
 								if (hit3.collider.tag == "NewBorder") {

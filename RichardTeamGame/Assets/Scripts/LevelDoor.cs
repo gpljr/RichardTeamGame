@@ -22,6 +22,7 @@ public class LevelDoor : MonoBehaviour
 		void OnTriggerEnter2D (Collider2D other)
 		{
 				if (other.gameObject.tag == "Player1") {
+						print ("Player1");
 						Events.g.Raise (new PlayerEnterLevelDoorEvent (isPlayerOne: true));
 						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position, volume);
 						if (isReunion) {
@@ -29,6 +30,7 @@ public class LevelDoor : MonoBehaviour
 						}
 				}
 				if (other.gameObject.tag == "Player2") {
+						print ("Player2");
 						Events.g.Raise (new PlayerEnterLevelDoorEvent (isPlayerOne: false));
 						AudioSource.PlayClipAtPoint (nextLevelAudio, this.transform.position);
 						if (isReunion) {
@@ -39,12 +41,14 @@ public class LevelDoor : MonoBehaviour
 		void OnTriggerExit2D (Collider2D other)
 		{
 				if (other.gameObject.tag == "Player1") {
+						print ("Player1 out");
 						Events.g.Raise (new PlayerExitLevelDoorEvent (isPlayerOne: true));
 						if (isReunion) {
 								other.isTrigger = false;
 						}
 				}
 				if (other.gameObject.tag == "Player2") {
+						print ("Player2 out");
 						Events.g.Raise (new PlayerExitLevelDoorEvent (isPlayerOne: false));
 						if (isReunion) {
 								other.isTrigger = false;

@@ -63,10 +63,11 @@ public class LevelCode : MonoBehaviour
 						EndScene ();
 				}
 				if (Application.loadedLevelName == "reunion3") {
-						if (playerOneEnter) {
+						if (playerOneEnter || playerTwoEnter) {
 								EndScene ();
 						}
 				}
+				/*
 				if (Application.loadedLevelName == "Demo5") {
 						if (playerOneEnter && playerTwoEnter) {
 								Application.LoadLevel (Application.loadedLevel + 1);
@@ -76,7 +77,7 @@ public class LevelCode : MonoBehaviour
 						if (playerOneEnter) {
 								Application.LoadLevel (Application.loadedLevel + 1);
 						}
-				}
+				}*/
 		}
 		void OnEnable ()
 		{
