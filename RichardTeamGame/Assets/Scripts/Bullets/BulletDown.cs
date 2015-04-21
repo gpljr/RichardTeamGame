@@ -21,9 +21,9 @@ public class BulletDown : MonoBehaviour
 	
 		void OnTriggerEnter2D (Collider2D other)
 		{
-				if (other.gameObject.tag == "Player1" || other.gameObject.tag == "Player2") {
+				if (other.gameObject.tag == "PlayerY" || other.gameObject.tag == "PlayerG") {
 						AudioSource.PlayClipAtPoint (explosionAudio, this.transform.position, volume);
-						Application.LoadLevel (Application.loadedLevel);
+						CheckPoints.hit = true;
 				}
 				if (other.gameObject.tag == "BulletDestroyer") {
 						Destroy (this.gameObject);

@@ -25,5 +25,14 @@ public class CheckPointTrigger : MonoBehaviour {
 			isTriggered2 = true;
 			}
 	}
+
+	void OnTriggerExit2D (Collider2D other){
+		if (other.gameObject.tag == "Player1") {
+			isTriggered = false;
+			}
+		if (other.gameObject.tag == "Player2") {
+			isTriggered2 = false;
+			}
+	}
 	
 }

@@ -14,11 +14,12 @@ public class CheckPoints : MonoBehaviour {
 	public Transform player2Picture;
 	public GameObject Check1;
 	public GameObject Check2;
+	public static bool hit = false;
 
 
 	// Use this for initialization
 	void Start () {
-	
+		hit = false;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +30,19 @@ public class CheckPoints : MonoBehaviour {
 			player1Picture.transform.position = new Vector3 (temp1x, temp1y, 0);
 			player2.transform.position = new Vector3 (temp2x, temp2y, 0);
 			player2Picture.transform.position = new Vector3 (temp2x, temp2y, 0);
+			}
+			else{
+				Application.LoadLevel (Application.loadedLevel);
+			}
+		}
+
+		if (hit) {
+			if(checkPointSaved){
+				player1.transform.position = new Vector3 (temp1x,temp1y, 0);
+				player1Picture.transform.position = new Vector3 (temp1x, temp1y, 0);
+				player2.transform.position = new Vector3 (temp2x, temp2y, 0);
+				player2Picture.transform.position = new Vector3 (temp2x, temp2y, 0);
+				hit = false;
 			}
 			else{
 				Application.LoadLevel (Application.loadedLevel);
