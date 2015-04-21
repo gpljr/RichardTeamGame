@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
 		private float cameraX = 0;
 		private float cameraY = 0;
 		public float cameraZ = -20;
-		private float boxDistance;
+		public static float boxDistance;
 		public Transform Player1;
 		public Transform Player2;
 	public float smoothTime = 0.3F;

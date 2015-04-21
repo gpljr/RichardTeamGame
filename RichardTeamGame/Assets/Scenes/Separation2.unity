@@ -271,8 +271,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
       propertyPath: m_TagString
-      value: Border
+      value: NewBorder
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
+      propertyPath: trigger1
+      value: 
+      objectReference: {fileID: 1504683360}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
   m_IsPrefabParent: 0
@@ -2755,7 +2759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 132688, guid: 388c9debe23cfb94196f9f80d088bc6f, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 388c9debe23cfb94196f9f80d088bc6f, type: 2}
@@ -3171,6 +3175,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1713169885}
+    - target: {fileID: 21295672, guid: 0c52c6fb71ef2d443b863741779956af, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cca76beeb330d8243a9d65de9d89355b,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c52c6fb71ef2d443b863741779956af, type: 2}
   m_IsPrefabParent: 0
@@ -5599,6 +5608,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 692360829}
+    - target: {fileID: 21218718, guid: b4e830a6d58135e49a9ad31f2aa8fc98, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 709e31d121fc87e4c8c9b7285da68acc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4e830a6d58135e49a9ad31f2aa8fc98, type: 2}
   m_IsPrefabParent: 0
@@ -11604,6 +11618,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aab7ead37388c2f49b9f7160564762d5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1504683360
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 70d2310bfef2246428668db9d024ecc4, type: 2}
+  m_PrefabInternal: {fileID: 2015692643}
 --- !u!1001 &1505494475
 Prefab:
   m_ObjectHideFlags: 0
@@ -13122,8 +13140,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
       propertyPath: m_TagString
-      value: Border
+      value: NewBorder
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
+      propertyPath: trigger1
+      value: 
+      objectReference: {fileID: 1504683360}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93c11c50ca2e28a4694a9d9baa4be9f4, type: 2}
   m_IsPrefabParent: 0
