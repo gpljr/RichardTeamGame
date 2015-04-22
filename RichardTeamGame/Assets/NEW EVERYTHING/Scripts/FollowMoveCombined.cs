@@ -24,4 +24,12 @@ public class FollowMoveCombined : MonoBehaviour {
 		Vector3 targetPosition = target.TransformPoint(new Vector3(0, 0, 0));
 		transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 	}
+
+	void OnTriggerEnter2D (Collider2D other){
+
+		if (other.gameObject.tag == "Bullet") {
+			Application.LoadLevel (Application.loadedLevel);
+		}
+
+	}
 }
