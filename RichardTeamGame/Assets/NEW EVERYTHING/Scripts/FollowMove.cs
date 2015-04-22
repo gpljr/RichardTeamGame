@@ -20,10 +20,10 @@ public class FollowMove : MonoBehaviour {
 						anim.SetFloat ("Distance", CameraFollow.boxDistance);
 				}
 
-		if (Mathf.Abs (transform.position.x - target.transform.position.x) > 0.1f || Mathf.Abs (transform.position.y - target.transform.position.y) > 0.1) {
+		if (Mathf.Abs (transform.position.x - target.transform.position.x) > 1f || Mathf.Abs (transform.position.y - target.transform.position.y) > 1f) {
 			DetectingOthers.moving = true;
 		}
-		if (Mathf.Abs (transform.position.x - target.transform.position.x) < 0.1f && Mathf.Abs (transform.position.y - target.transform.position.y) < 0.1f) {
+		if (Mathf.Abs (transform.position.x - target.transform.position.x) < 1f && Mathf.Abs (transform.position.y - target.transform.position.y) < 1f) {
 			DetectingOthers.moving = false;
 		}
 		
