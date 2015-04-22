@@ -4,7 +4,7 @@ using System.Collections;
 public class Shooter : MonoBehaviour
 {
 
-		private float timeBetweenShots = 3f;
+		private float timeBetweenShots ;
 		public GameObject BulletType;
 		public float shotTime = 3f;
 		[SerializeField]
@@ -16,13 +16,14 @@ public class Shooter : MonoBehaviour
 		[SerializeField]
 		private float
 				movingTime = 2f;
-		private float timeBetweenMoving = 2f;
+		private float timeBetweenMoving;
 		private int moving1 = 1;
 		
 		// Use this for initialization
 		void Start ()
 		{
-	
+				timeBetweenShots = shotTime;
+				timeBetweenMoving = movingTime;
 		}
 	
 		// Update is called once per frame
@@ -30,18 +31,19 @@ public class Shooter : MonoBehaviour
 		{
 	
 				timeBetweenShots -= Time.deltaTime;
-
+				print ("timeBetweenShots " + timeBetweenShots);
 				if (timeBetweenShots < 0) {
 						Instantiate (BulletType, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
 						timeBetweenShots = shotTime;
 				}
 				if (canMove) {
 						timeBetweenMoving -= Time.deltaTime;
+						print ("timeBetweenMoving " + timeBetweenMoving);
 						if (timeBetweenMoving < 0) {
 								if (moving1 == 1) {
-										this.GetComponent<Rigidbody2D>().velocity = movingVelocity;
+										this.GetComponent<Rigidbody2D> ().velocity = movingVelocity;
 								} else if (moving1 == -1) {
-										this.GetComponent<Rigidbody2D>().velocity = -movingVelocity;
+										this.GetComponent<Rigidbody2D> ().velocity = -movingVelocity;
 								}
 								moving1 *= -1;
 								timeBetweenMoving = movingTime;
