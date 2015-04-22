@@ -15,6 +15,10 @@ public class CheckPoints : MonoBehaviour {
 	public GameObject Check1;
 	public GameObject Check2;
 	public static bool hit = false;
+	public float check1Newx = 100f;
+	public float check1Newy = 100f;
+	public float check2Newx = 100f;
+	public float check2Newy = 100f;
 
 
 	// Use this for initialization
@@ -50,12 +54,13 @@ public class CheckPoints : MonoBehaviour {
 		}
 
 		if (Check1.GetComponent<CheckPointTrigger> ().isTriggered && Check2.GetComponent<CheckPointTrigger> ().isTriggered2 || Check1.GetComponent<CheckPointTrigger> ().isTriggered2 && Check2.GetComponent<CheckPointTrigger> ().isTriggered) {
-			Debug.Log ("getting info");
 			checkPointSaved = true;
 			temp1x = player1.position.x;
 			temp1y = player1.position.y;
 			temp2x = player2.position.x;
 			temp2y = player2.position.y;
+			Check1.transform.position = new Vector3(check1Newx, check1Newy, 0f);
+			Check2.transform.position = new Vector3(check2Newx, check2Newy, 0f);
 			Check1.GetComponent<CheckPointTrigger> ().isTriggered = false;
 			Check1.GetComponent<CheckPointTrigger> ().isTriggered2 = false;
 			Check2.GetComponent<CheckPointTrigger> ().isTriggered = false;

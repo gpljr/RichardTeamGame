@@ -170,7 +170,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414676, guid: d36e6b07daef2c6489ab996a509ec895, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d36e6b07daef2c6489ab996a509ec895, type: 2}
@@ -1558,6 +1558,10 @@ MonoBehaviour:
   player2Picture: {fileID: 1616042508}
   Check1: {fileID: 483974519}
   Check2: {fileID: 8951712}
+  check1Newx: 27.8400002
+  check1Newy: -4.63999987
+  check2Newx: 27.8400002
+  check2Newy: -2.31999993
 --- !u!1001 &210856276
 Prefab:
   m_ObjectHideFlags: 0
@@ -3045,7 +3049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 485608, guid: ccde1b8b954e6fc458f9ca12f41152df, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccde1b8b954e6fc458f9ca12f41152df, type: 2}

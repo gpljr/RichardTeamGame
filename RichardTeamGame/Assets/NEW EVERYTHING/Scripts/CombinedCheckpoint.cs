@@ -39,7 +39,6 @@ public class CombinedCheckpoint : MonoBehaviour {
 		}
 		
 		if (Check1.GetComponent<CheckPointTrigger> ().isTriggered3) {
-			Debug.Log ("getting info");
 			checkPointSaved = true;
 			temp1x = player1.position.x;
 			temp1y = player1.position.y;

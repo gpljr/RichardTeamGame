@@ -4480,6 +4480,10 @@ MonoBehaviour:
   player2Picture: {fileID: 203456611}
   Check1: {fileID: 1692463758}
   Check2: {fileID: 913920303}
+  check1Newx: 100
+  check1Newy: 100
+  check2Newx: 100
+  check2Newy: 100
 --- !u!1001 &1392828004
 Prefab:
   m_ObjectHideFlags: 0
