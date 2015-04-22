@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21295672}
   - 114: {fileID: 11409892}
   - 61: {fileID: 6141660}
-  - 95: {fileID: 9514360}
+  - 95: {fileID: 9598652}
   m_Layer: 0
   m_Name: yellow
   m_TagString: PlayerY
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2.31999993, y: 2.31999993}
---- !u!95 &9514360
+--- !u!95 &9598652
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
