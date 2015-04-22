@@ -24,6 +24,7 @@ public class BulletDown : MonoBehaviour
 				if (other.gameObject.tag == "PlayerY" || other.gameObject.tag == "PlayerG") {
 						AudioSource.PlayClipAtPoint (explosionAudio, this.transform.position, volume);
 						CheckPoints.hit = true;
+						CombinedCheckpoint.hitC = true;
 				}
 				if (other.gameObject.tag == "BulletDestroyer") {
 						Destroy (this.gameObject);

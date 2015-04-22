@@ -5,6 +5,7 @@ public class CheckPointTrigger : MonoBehaviour {
 
 	public bool isTriggered;
 	public bool isTriggered2;
+	public bool isTriggered3;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,9 @@ public class CheckPointTrigger : MonoBehaviour {
 		if (other.gameObject.tag == "Player2") {
 			isTriggered2 = true;
 			}
+		if (other.gameObject.name == "combined") {
+			isTriggered3 = true;
+			}
 	}
 
 	void OnTriggerExit2D (Collider2D other){
@@ -33,6 +37,9 @@ public class CheckPointTrigger : MonoBehaviour {
 		if (other.gameObject.tag == "Player2") {
 			isTriggered2 = false;
 			}
+		if (other.gameObject.name == "combined"){
+			isTriggered3 = false;
+		}
 	}
 	
 }
