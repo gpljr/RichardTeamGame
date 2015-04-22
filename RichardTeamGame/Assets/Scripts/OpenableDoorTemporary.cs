@@ -18,9 +18,11 @@ public class OpenableDoorTemporary : MonoBehaviour
 	
     private bool _isOpened;
     private Vector3 originalPosition;
+	Animator anim;
     // Use this for initialization
     void Start()
     {
+		anim = GetComponent<Animator> ();
         originalPosition = this.transform.position;
     }
 	
@@ -42,6 +44,13 @@ public class OpenableDoorTemporary : MonoBehaviour
                 }
                 break;
             case 2:
+			if (trigger1.GetComponent<TriggerForDoorTemporary>().isTriggered || trigger2.GetComponent<TriggerForDoorTemporary>().isTriggered)
+			{
+				anim.SetBool ("HalfOpen", true);
+			}
+			else{
+				anim.SetBool ("HalfOpen", false);
+			}
                 if (trigger1.GetComponent<TriggerForDoorTemporary>().isTriggered && trigger2.GetComponent<TriggerForDoorTemporary>().isTriggered)
                 {
                     if (!_isOpened)
