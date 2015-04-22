@@ -62,7 +62,7 @@ public class LevelCode : MonoBehaviour
 				if (Input.GetKeyDown (KeyCode.N)) {
 						EndScene ();
 				}
-				if (Application.loadedLevelName == "reunion3") {
+				if (Application.loadedLevelName == "reunion2") {
 						if (playerOneEnter || playerTwoEnter) {
 								EndScene ();
 						}
