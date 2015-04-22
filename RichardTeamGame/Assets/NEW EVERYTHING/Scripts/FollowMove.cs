@@ -13,7 +13,12 @@ public class FollowMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		anim.SetFloat ("Distance", CameraFollow.boxDistance);
+
+		if (Application.loadedLevelName == "Separation2" || Application.loadedLevelName == "reunion") {
+						anim.SetFloat ("Distance", 10f);
+				} else {
+						anim.SetFloat ("Distance", CameraFollow.boxDistance);
+				}
 
 		if (Mathf.Abs (transform.position.x - target.transform.position.x) > 0.1f || Mathf.Abs (transform.position.y - target.transform.position.y) > 0.1) {
 			DetectingOthers.moving = true;
