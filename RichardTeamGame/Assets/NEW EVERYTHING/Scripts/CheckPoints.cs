@@ -42,17 +42,24 @@ public class CheckPoints : MonoBehaviour
 				}
 
 				if (Check1.GetComponent<CheckPointTrigger> ().isTriggered && Check2.GetComponent<CheckPointTrigger> ().isTriggered2 || Check1.GetComponent<CheckPointTrigger> ().isTriggered2 && Check2.GetComponent<CheckPointTrigger> ().isTriggered) {
-						checkPointSaved = true;
+						
 						temp1x = player1.position.x;
 						temp1y = player1.position.y;
 						temp2x = player2.position.x;
 						temp2y = player2.position.y;
-						Check1.transform.position = new Vector3 (check1Newx, check1Newy, 0f);
-						Check2.transform.position = new Vector3 (check2Newx, check2Newy, 0f);
-						Check1.GetComponent<CheckPointTrigger> ().isTriggered = false;
-						Check1.GetComponent<CheckPointTrigger> ().isTriggered2 = false;
-						Check2.GetComponent<CheckPointTrigger> ().isTriggered = false;
-						Check2.GetComponent<CheckPointTrigger> ().isTriggered2 = false;
+						
+						if (!checkPointSaved) {
+								checkPointSaved = true;
+								Check1.transform.position = new Vector3 (check1Newx, check1Newy, 0f);
+								Check2.transform.position = new Vector3 (check2Newx, check2Newy, 0f);
+								Check1.GetComponent<CheckPointTrigger> ().isTriggered = false;
+								Check1.GetComponent<CheckPointTrigger> ().isTriggered2 = false;
+								Check2.GetComponent<CheckPointTrigger> ().isTriggered = false;
+								Check2.GetComponent<CheckPointTrigger> ().isTriggered2 = false;
+						} else {
+								GameObject.Destroy (Check1);
+								GameObject.Destroy (Check2);
+						}
 				}
 
 
