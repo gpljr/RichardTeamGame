@@ -2259,9 +2259,9 @@ MonoBehaviour:
   Check1: {fileID: 2076385006}
   Check2: {fileID: 1949042599}
   check1Newx: 27.8400002
-  check1Newy: -4.63999987
-  check2Newx: 27.8400002
-  check2Newy: -2.31999993
+  check1Newy: -6.96000004
+  check2Newx: 30.1599998
+  check2Newy: -6.96000004
 --- !u!1001 &910349704
 Prefab:
   m_ObjectHideFlags: 0
