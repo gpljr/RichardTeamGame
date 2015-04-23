@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door1
+  m_Name: DoorType3
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: HalfOpen
@@ -13,11 +13,11 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110789034}
+    m_StateMachine: {fileID: 110722416}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -26,9 +26,9 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_MultiThreadedStateMachine: 1
---- !u!1101 &110126724
+--- !u!1101 &110100856
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -39,7 +39,7 @@ AnimatorStateTransition:
     m_ConditionEvent: HalfOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110224668}
+  m_DstState: {fileID: 110224850}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -51,7 +51,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &110188486
+--- !u!1101 &110126970
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -62,7 +62,7 @@ AnimatorStateTransition:
     m_ConditionEvent: HalfOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110278246}
+  m_DstState: {fileID: 110266656}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -74,43 +74,43 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &110224668
+--- !u!1102 &110224850
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door1HalfOpen
+  m_Name: Door3HalfOpen
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 110188486}
+  - {fileID: 110126970}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 9b3b87eb6a03c3b4fade391c78ef35c3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7199f9883dbf2a3409436300352e8fa8, type: 2}
   m_Tag: 
---- !u!1102 &110278246
+--- !u!1102 &110266656
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door1Closed
+  m_Name: Door3Closed
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 110126724}
+  - {fileID: 110100856}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: a84587579623f9041b984e8fefc32ecb, type: 2}
+  m_Motion: {fileID: 7400000, guid: 13b4045ad7d6553499b713079f03750a, type: 2}
   m_Tag: 
---- !u!1107 &110789034
+--- !u!1107 &110722416
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -119,21 +119,21 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 110224668}
-    m_Position: {x: 468, y: 96, z: 0}
+    m_State: {fileID: 110266656}
+    m_Position: {x: 200, y: 0, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 110278246}
-    m_Position: {x: 324, y: 24, z: 0}
+    m_State: {fileID: 110224850}
+    m_Position: {x: 235, y: 65, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions:
     data:
-      first: {fileID: 110789034}
+      first: {fileID: 110722416}
       second: []
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 110278246}
+  m_DefaultState: {fileID: 110266656}
