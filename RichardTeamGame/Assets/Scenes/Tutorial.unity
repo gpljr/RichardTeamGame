@@ -1622,7 +1622,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 20
 --- !u!1001 &702605859
 Prefab:
   m_ObjectHideFlags: 0
@@ -2458,7 +2458,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
 --- !u!1001 &1094257108
 Prefab:
   m_ObjectHideFlags: 0
@@ -4233,7 +4233,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 18
 --- !u!1001 &2036541627
 Prefab:
   m_ObjectHideFlags: 0
@@ -4471,7 +4471,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 17
 --- !u!1001 &2060756097
 Prefab:
   m_ObjectHideFlags: 0
