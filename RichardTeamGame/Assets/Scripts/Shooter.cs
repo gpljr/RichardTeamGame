@@ -31,14 +31,12 @@ public class Shooter : MonoBehaviour
 		{
 	
 				timeBetweenShots -= Time.deltaTime;
-				print ("timeBetweenShots " + timeBetweenShots);
 				if (timeBetweenShots < 0) {
 						Instantiate (BulletType, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
 						timeBetweenShots = shotTime;
 				}
 				if (canMove) {
 						timeBetweenMoving -= Time.deltaTime;
-						print ("timeBetweenMoving " + timeBetweenMoving);
 						if (timeBetweenMoving < 0) {
 								if (moving1 == 1) {
 										this.GetComponent<Rigidbody2D> ().velocity = movingVelocity;
