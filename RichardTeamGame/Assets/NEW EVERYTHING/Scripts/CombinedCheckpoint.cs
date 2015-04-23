@@ -35,7 +35,8 @@ public class CombinedCheckpoint : MonoBehaviour
 						checkPointSaved = true;
 						temp1x = player1.position.x;
 						temp1y = player1.position.y;
-						Check1.GetComponent<CheckPointTrigger> ().isTriggered3 = false;
+						//Check1.GetComponent<CheckPointTrigger> ().isTriggered3 = false;
+						GameObject.Destroy (Check1);
 				}
 		
 		

@@ -567,8 +567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sadMusic: {fileID: 8300000, guid: cb2a80b894d2a224db8efbec9c5e073e, type: 3}
   happyMusic: {fileID: 8300000, guid: 35306d365dfaff24b83dd772e1ed7d1e, type: 3}
-  sadLevel: 8
-  happyLevel: 12
+  sadLevel: 9
+  happyLevel: 13
 --- !u!1 &1004618852
 GameObject:
   m_ObjectHideFlags: 0
