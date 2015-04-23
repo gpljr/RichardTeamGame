@@ -23,7 +23,8 @@ public class BulletLeft : MonoBehaviour
 				if (other.gameObject.tag == "PlayerY" || other.gameObject.tag == "PlayerG") {
 						AudioSource.PlayClipAtPoint (explosionAudio, this.transform.position);
 						CheckPoints.hit = true;
-			CombinedCheckpoint.hitC = true;
+						CombinedCheckpoint.hitC = true;
+						Destroy (this.gameObject);
 				}
 				if (other.gameObject.tag == "BulletDestroyer") {
 						Destroy (this.gameObject);
