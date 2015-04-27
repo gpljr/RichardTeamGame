@@ -21,6 +21,7 @@ public class LevelCode : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
+				Cursor.visible = false;
 				if (Application.loadedLevelName == "sadBegin") {
 		
 						Application.LoadLevel (Application.loadedLevel + 1);
