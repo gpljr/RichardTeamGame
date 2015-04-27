@@ -17,22 +17,17 @@ public class LevelCode : MonoBehaviour
 
 		private bool playerOneEnter, playerTwoEnter;
 		public bool inFading = true;
+		private int _currentMusicNum;
 
 		// Use this for initialization
 		void Start ()
 		{
-				Cursor.visible = false;
-				if (Application.loadedLevelName == "sadBegin") {
-		
+				//Cursor.visible = false;
+				if ((Application.loadedLevelName == "00. music begin") || (Application.loadedLevelName == "10. sad begin" && _currentMusicNum == 2) || (Application.loadedLevelName == "13. happy begin" && _currentMusicNum == 3)) {
+
 						Application.LoadLevel (Application.loadedLevel + 1);
 				} 
-				if (Application.loadedLevelName == "happyBegin") {
-						
-						Application.LoadLevel (Application.loadedLevel + 1);
-				} 
-				if (Application.loadedLevelName == "beforeReunion1") {
-						Application.LoadLevel (Application.loadedLevel + 1);
-				} 
+				
 				_image = GameObject.FindWithTag ("Fade").GetComponent<Image> ();
 				StartScene ();
 		}
@@ -48,13 +43,13 @@ public class LevelCode : MonoBehaviour
 				}
 
 				if (Input.GetKeyDown (KeyCode.Backspace)) {
-						Application.LoadLevel ("StartScreen");
+						Application.LoadLevel (1);
 				}
 
 				if (playerOneEnter && playerTwoEnter) {
 						EndScene ();
 				}
-				if (Application.loadedLevelName == "StartScreen") {
+				if (Application.loadedLevel == 1) {
 						if (Input.anyKeyDown) {
 								EndScene ();
 						}
@@ -62,7 +57,7 @@ public class LevelCode : MonoBehaviour
 				if (Input.GetKeyDown (KeyCode.N)) {
 						EndScene ();
 				}
-				if (Application.loadedLevelName == "reunion2") {
+				if (Application.loadedLevelName == "14. combined") {
 						if (playerOneEnter || playerTwoEnter) {
 								EndScene ();
 						}
@@ -83,12 +78,14 @@ public class LevelCode : MonoBehaviour
 		{
 				Events.g.AddListener<PlayerEnterLevelDoorEvent> (PlayerEnter);
 				Events.g.AddListener<PlayerExitLevelDoorEvent> (PlayerExit);
+				Events.g.AddListener<MusicPlayed> (GetCurrentMusicNum);
 		}
 	
 		void OnDisable ()
 		{
 				Events.g.RemoveListener<PlayerEnterLevelDoorEvent> (PlayerEnter);
 				Events.g.RemoveListener<PlayerExitLevelDoorEvent> (PlayerExit);
+				Events.g.RemoveListener<MusicPlayed> (GetCurrentMusicNum);
 		}
 		void PlayerEnter (PlayerEnterLevelDoorEvent e)
 		{
@@ -105,6 +102,10 @@ public class LevelCode : MonoBehaviour
 				} else {
 						playerTwoEnter = false;
 				}
+		}
+		void GetCurrentMusicNum (MusicPlayed e)
+		{
+				_currentMusicNum = e.musicNum;
 		}
 
 		void StartScene ()

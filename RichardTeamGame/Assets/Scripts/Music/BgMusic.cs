@@ -3,14 +3,18 @@ using System.Collections;
 
 public class BgMusic : MonoBehaviour
 {
+		public AudioClip beginMusic;	
 		public AudioClip sadMusic;
 		public AudioClip happyMusic;
+		public int beginLevel = 1;
 		public int sadLevel = 8;
 		public int happyLevel = 12;
 		// Use this for initialization
 		void Start ()
 		{
 				DontDestroyOnLoad (this);
+				
+
 		}
 	
 		// Update is called once per frame
@@ -25,7 +29,11 @@ public class BgMusic : MonoBehaviour
 		}
 		void OnLevelWasLoaded (int level)
 		{
-				
+				if (level == beginLevel) {
+						gameObject.GetComponent<AudioSource> ().clip = beginMusic;
+						gameObject.GetComponent<AudioSource> ().Play ();
+						Events.g.Raise (new MusicPlayed (1));
+				}
 				if (level == sadLevel) {
 						while (gameObject.GetComponent<AudioSource> ().volume > 0) {
 								gameObject.GetComponent<AudioSource> ().volume -= 0.5f * Time.deltaTime;
@@ -33,6 +41,7 @@ public class BgMusic : MonoBehaviour
 								if (gameObject.GetComponent<AudioSource> ().volume < 0.1f) {
 										gameObject.GetComponent<AudioSource> ().clip = sadMusic;
 										gameObject.GetComponent<AudioSource> ().Play ();
+										Events.g.Raise (new MusicPlayed (2));
 										break;
 								}
 						}
@@ -46,6 +55,7 @@ public class BgMusic : MonoBehaviour
 								if (gameObject.GetComponent<AudioSource> ().volume < 0.1f) {
 										gameObject.GetComponent<AudioSource> ().clip = happyMusic;
 										gameObject.GetComponent<AudioSource> ().Play ();
+										Events.g.Raise (new MusicPlayed (3));
 										break;
 								}
 				
