@@ -31,7 +31,6 @@ public class FollowMove2 : MonoBehaviour
 				if (Application.loadedLevelName == "Separation2" || Application.loadedLevelName == "reunion") {
 						anim.SetFloat ("Distance2", 10f);
 				} else if (_inStar) {
-						print ("player2 in star");
 						anim.SetFloat ("Distance2", 0f);
 				} else {
 						anim.SetFloat ("Distance2", CameraFollow.boxDistance);
