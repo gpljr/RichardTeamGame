@@ -28,7 +28,7 @@ public class FollowMove2 : MonoBehaviour
 		void Update ()
 		{
 
-				if (Application.loadedLevelName == "Separation2" || Application.loadedLevelName == "reunion") {
+				if (Application.loadedLevelName == "11. separation" || Application.loadedLevelName == "12. separation to reunion") {
 						anim.SetFloat ("Distance2", 10f);
 				} else if (_inStar) {
 						anim.SetFloat ("Distance2", 0f);
