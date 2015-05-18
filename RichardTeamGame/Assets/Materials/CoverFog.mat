@@ -80,6 +80,10 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Radius
+        second: .167971492
+      data:
+        first:
           name: _Cutoff
         second: .5
       data:
@@ -146,8 +150,20 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 0, b: 0, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Position
+        second: {r: .5, g: .5, b: 0, a: 0}
+      data:
+        first:
+          name: _Position1
+        second: {r: .585251629, g: .281279296, b: 0, a: 0}
+      data:
+        first:
+          name: _Position2
+        second: {r: .415709406, g: .281279325, b: 0, a: 0}
