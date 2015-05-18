@@ -81,7 +81,7 @@ Material:
       data:
         first:
           name: _Radius
-        second: .167971492
+        second: .169533595
       data:
         first:
           name: _Cutoff
@@ -162,8 +162,8 @@ Material:
       data:
         first:
           name: _Position1
-        second: {r: .585251629, g: .281279296, b: 0, a: 0}
+        second: {r: .556216836, g: .224346712, b: 0, a: 0}
       data:
         first:
           name: _Position2
-        second: {r: .415709406, g: .281279325, b: 0, a: 0}
+        second: {r: .443188697, g: .337374866, b: 0, a: 0}

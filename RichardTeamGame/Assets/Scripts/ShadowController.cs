@@ -28,9 +28,9 @@ public class ShadowController : MonoBehaviour
     void LateUpdate()
     {
         float aspectRatio = Camera.main.pixelHeight / (float)Camera.main.pixelWidth;
-        print("Char1.transform.position "+Char1.transform.position);
+        //print("Char1.transform.position "+Char1.transform.position);
         Vector2 vPos1 = Camera.main.WorldToViewportPoint(Char1.transform.position);
-        print("vPos1 "+vPos1);
+        //print("vPos1 "+vPos1);
         vPos1.y *= aspectRatio;
         Vector2 vPos2 = Camera.main.WorldToViewportPoint(Char2.transform.position);
         vPos2.y *= aspectRatio;
