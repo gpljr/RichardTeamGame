@@ -14,6 +14,8 @@ public class DetectingOthers2 : MonoBehaviour
 		private float move = 2.32f;
 		public LayerMask WhatIsCollidable2;
 		private float  length = 1.25f;
+		
+		private bool _isFading;
 		// Use this for initialization
 		void Start ()
 		{
@@ -23,8 +25,7 @@ public class DetectingOthers2 : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				GameObject LevelTransition = GameObject.Find ("LevelCode");
-				if (!LevelTransition.GetComponent<LevelCode> ().inFading) {
+				if (!_isFading) {
 						//broadcasting position
 						player2x = this.transform.position.x;
 						player2y = this.transform.position.y;
@@ -103,4 +104,18 @@ public class DetectingOthers2 : MonoBehaviour
 						//end moving the square
 				}
 		}
+
+		void OnEnable()
+    {
+        Events.g.AddListener<FadingEvent>(Fading);
+    }
+	
+    void OnDisable()
+    {
+        Events.g.RemoveListener<FadingEvent>(Fading);
+    }
+    void Fading(FadingEvent e)
+    {
+        _isFading = e.isFading;
+    }
 }

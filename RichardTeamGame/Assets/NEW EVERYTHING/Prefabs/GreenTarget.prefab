@@ -56,6 +56,7 @@ MonoBehaviour:
   WhatIsCollidable2:
     serializedVersion: 2
     m_Bits: 1536
+  LevelTransition: {fileID: 179120, guid: 9769a8f600269c7459738288a6e121d7, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

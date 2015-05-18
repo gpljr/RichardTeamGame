@@ -1,0 +1,617 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pix",
+				"pixelHeight	int { get; }"
+			],
+			[
+				"worldto",
+				"WorldToViewportPoint(Vector3 position)	Vector3"
+			],
+			[
+				"came",
+				"Camera	Camera"
+			],
+			[
+				"float",
+				"float4"
+			],
+			[
+				"Tile",
+				"TileType	TileType"
+			],
+			[
+				"Wor",
+				"WorldManager	WorldManager"
+			],
+			[
+				"world",
+				"WorldManager	WorldManager"
+			],
+			[
+				"so",
+				"socketlist"
+			],
+			[
+				"socket",
+				"socketlist"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "RichardTeamGame/Assets/Scripts/LevelEntering.cs",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "RichardTeamGame/Assets/Scripts/Music/BgMusic.cs",
+			"settings":
+			{
+				"buffer_size": 3584,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "RichardTeamGame/Assets/Shaders/RadialShader.shader",
+			"settings":
+			{
+				"buffer_size": 1010,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "RichardTeamGame/Assets/Scripts/ShadowController.cs",
+			"settings":
+			{
+				"buffer_size": 986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/U3D/0.PROJECTS/MadMansion/MadMansion/Assets/Scripts/UI/CatchUI.cs",
+			"settings":
+			{
+				"buffer_size": 1852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/U3D/0.PROJECTS/MadMansion/MadMansion/Assets/Shaders/RadialShader.shader",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "hlsl",
+		"selected_items":
+		[
+			[
+				"hlsl",
+				"Set Syntax: HLSL"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 209.0,
+		"history":
+		[
+			"print(\"hi\")",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/U3D/0.PROJECTS/RichardTeamGame"
+	],
+	"file_history":
+	[
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Shaders/ShadowShader.shader",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Scripts/Events/LevelEnteringEvent.cs",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Scripts/LevelEntering.cs",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/Hidden/Assets/MapEditor.cs",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Scripts/LevelCode.cs",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Scripts/Music/BgMusic.cs",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/Hidden/Assets/WorldManager.cs",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/Hidden/Assets/Character.cs",
+		"/D/U3D/0.PROJECTS/zTutorial_March/ShadowLevelEditor/Assets/_Scripts/GameEditor.cs",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame.sublime-project",
+		"/C/Users/ljr/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/PrebuiltOmniSharpServer/config.json",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/Hidden/Assets/Map.cs",
+		"/D/U3D/0.PROJECTS/zTutorial_March/ShadowLevelEditor/firstLevel.xml",
+		"/C/Users/ljr/Desktop/map_schema.xml",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Assets/Scripts/LevelDoor.cs",
+		"/D/U3D/0.PROJECTS/zTutorial_March/ShadowLevelEditor/Assets/tutorial1control.cs",
+		"/C/Users/ljr/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/hidden.sublime-project",
+		"/D/U3D/0.PROJECTS/Hidden/Hidden/Hidden/Hidden.sln",
+		"/C/Users/ljr/Desktop/map.xml",
+		"/C/Users/ljr/Desktop/schema.xml",
+		"/C/Users/ljr/Desktop/data-set.xml",
+		"/C/Users/ljr/Desktop/信息核实工作 (1)/任务说明.txt",
+		"/C/Users/ljr/Dropbox/Projects for public access/A Tale of Two Blocks/latest update.txt",
+		"/E/04.电影/已放移动硬盘/American Hustle 2013 DVDScr XViD AC3-FiNGERBLaST/AmricnHustlr.DVDSCR-HD3D.srt",
+		"/D/U3D/0.PROJECTS/NetworkGuessingNumber/NetworkGame-guessingNumber/TCPServer/tcp.js",
+		"/G/05 今日学堂电影课系列 248G/电影课01 如何才能赚大钱？如何具有“超级影响力”？/如何才能赚大钱？如何具有超级影响力？.txt",
+		"/G/资料/照片/AMBER/amber.txt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/week 11 final project/The.Lives.Of.Others.BDRIP.@720.X264.AAC.F@Silu.srt",
+		"/C/Users/ljr/Desktop/刷格式.txt",
+		"/D/U3D/0.PROJECTS/NetworkGame/TCPServer/tcp.js",
+		"/D/02.资料/in USC/portfolio/!new portfolio/JS/jquery-latest.min.js",
+		"/D/02.资料/in USC/portfolio/!new portfolio/JS/file.js",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Build/CTIN-492 2015 GE Final Brian George/READ ME.txt",
+		"/D/02.资料/in USC/Projects/Dissonance/新建文本文档.txt",
+		"/C/Users/ljr/Desktop/新建文本文档.txt",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/past/index.js",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/package.json",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/tcp.js",
+		"/D/U3D/0.PROJECTS/NetworkGame/readme.txt",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/beep.js",
+		"/D/U3D/0.PROJECTS/ChatServer/node_modules/socket.io/Readme.md",
+		"/D/U3D/0.PROJECTS/NetworkGame/Build/Build.html",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/index.js",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/index.html",
+		"/D/U3D/0.PROJECTS/RichardTeamGame/RichardTeamGame/Build/Mac/READ ME.txt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/week 11 final project/新建文本文档 (2).txt",
+		"/D/U3D/0.PROJECTS/NetworkGame/Server/Server.html",
+		"/C/Users/ljr/Desktop/temp/The Good Wife - 1x17 - Heart.HDTV.LOL.en.srt",
+		"/D/U3D/0.PROJECTS/ChatServer/index.js",
+		"/D/U3D/0.PROJECTS/ChatServer/index.html",
+		"/C/Users/ljr/Desktop/账号.txt",
+		"/D/U3D/0.PROJECTS/ChatServer/GruntFile.js",
+		"/D/U3D/0.PROJECTS/ChatServer/package.json",
+		"/D/U3D/0.PROJECTS/MadMansion/MadMansion/Assets/Scripts/MenuManipulation/GameFader.cs",
+		"/C/Users/ljr/Desktop/temp/The Good Wife - 1x16 - Fleas.HDTV.LOL.en.srt",
+		"/C/Users/ljr/Desktop/temp/The Good Wife - 1x15 - Bang.HDTV.en.srt",
+		"/C/Users/ljr/Desktop/temp/The Good Wife - 1x14 - Hi.HDTV.LOL.en.srt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/week 11 final project/新建文本文档.txt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/week 11 final project/credits.txt",
+		"/C/Users/ljr/Desktop/temp/The Good Wife - 1x13 - Bad.HDTV.VTV.en.srt",
+		"/D/U3D/0.PROJECTS/phaser-demo/GruntFile.js",
+		"/D/U3D/0.PROJECTS/phaser-demo/package.json",
+		"/D/U3D/0.PROJECTS/phaser-demo/deploy/index.html",
+		"/D/U3D/0.PROJECTS/phaser-demo/deploy/css/game.css",
+		"/D/U3D/0.PROJECTS/phaser-demo/src/game/main.js",
+		"/D/U3D/0.PROJECTS/phaser-demo/deploy/js/game.js",
+		"/D/U3D/0.PROJECTS/ChatServer/socket.io-client-master/test/index.js",
+		"/C/Users/ljr/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/E/04.电影/已放移动硬盘/肖恩克的救赎/shawshenk.txt",
+		"/D/02.资料/in USC/Courses/2nd/01. experimental game topics/Twine/CTIN-492 2015 Twine Game George Li/README.txt",
+		"/C/Users/ljr/Desktop/MovementMachine.cs",
+		"/D/02.资料/in USC/Courses/2nd/01. experimental game topics/LARP/CTIN-492 2015 LARP Final George Li/READ ME.txt",
+		"/D/02.资料/in USC/Courses/2nd/01. experimental game topics/LARP/CTIN-492 2015 FE Final George Li/READ ME.txt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/week 9 ARG/credits.txt",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/final project/The.Conversation.1974.DVDRiP.XviD.iNTERNAL-JUSTRiP.CD2.sub",
+		"/D/02.资料/in USC/Courses/2nd/03. writing/final project/The.Conversation.1974.DVDRiP.XviD.iNTERNAL-JUSTRiP.CD1.sub"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_shadowRenderer",
+			"_shadowRenderer1",
+			"v2f_img",
+			"Hidden",
+			"_levelName",
+			" {",
+			"\n		",
+			"Monster",
+			"_world",
+			"audience",
+			"talk",
+			"talkToUnity",
+			"door",
+			"threshold",
+			"minister",
+			"ma",
+			"director",
+			"typewriter",
+			"typewri",
+			"class action",
+			"function ",
+			"UnityObject2",
+			"unityPlayer",
+			"unity",
+			"truth",
+			"gameOver",
+			"JET",
+			"'\n",
+			"gameOver",
+			"setGameOver",
+			"scoreText",
+			"axisZ",
+			"security",
+			"convention"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "RichardTeamGame/Assets/Scripts/LevelEntering.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "RichardTeamGame/Assets/Scripts/Music/BgMusic.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"108,116": "Name should have prefix '_'. (Rule 'Fields').",
+								"1509,1516": "Redundant empty 'default' switch branch",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"193,203": "Name should have prefix '_'. (Rule 'Fields').",
+								"225,233": "Name should have prefix '_'. (Rule 'Fields').",
+								"254,264": "Name should have prefix '_'. (Rule 'Fields').",
+								"279,289": "Name should have prefix '_'. (Rule 'Fields').",
+								"308,316": "Name should have prefix '_'. (Rule 'Fields').",
+								"335,345": "Name should have prefix '_'. (Rule 'Fields').",
+								"922,929": "Parameter can be IComparable"
+							},
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "RichardTeamGame/Assets/Shaders/RadialShader.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								902,
+								902
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/hlsl/hlsl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "RichardTeamGame/Assets/Scripts/ShadowController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								919,
+								919
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"147,162": "The private field '_shadowRenderer' is never assigned",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"201,206": "The private field 'Char1' is never assigned",
+								"244,249": "The private field 'Char2' is never assigned"
+							},
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/U3D/0.PROJECTS/MadMansion/MadMansion/Assets/Scripts/UI/CatchUI.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/U3D/0.PROJECTS/MadMansion/MadMansion/Assets/Shaders/RadialShader.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "RichardTeamGame.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"shadow",
+				"RichardTeamGame\\Assets\\Scripts\\ShadowController.cs"
+			],
+			[
+				"bg",
+				"RichardTeamGame\\Assets\\Scripts\\Music\\BgMusic.cs"
+			],
+			[
+				"map",
+				"Hidden\\Assets\\MapEditor.cs"
+			],
+			[
+				"worldma",
+				"Hidden\\Assets\\WorldManager.cs"
+			],
+			[
+				"",
+				"Hidden\\Assets\\Character.cs"
+			],
+			[
+				"worlde",
+				"Hidden\\Assets\\WorldManager.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

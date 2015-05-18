@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/finalLevels/00. music begin.unity
   - enabled: 1
     path: Assets/Scenes/finalLevels/01. StartScreen.unity
@@ -25,13 +25,13 @@ EditorBuildSettings:
     path: Assets/Scenes/finalLevels/08. shooter tense.unity
   - enabled: 1
     path: Assets/Scenes/finalLevels/09. before separation.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/finalLevels/10. sad begin.unity
   - enabled: 1
     path: Assets/Scenes/finalLevels/11. separation.unity
   - enabled: 1
     path: Assets/Scenes/finalLevels/12. separation to reunion.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/finalLevels/13. happy begin.unity
   - enabled: 1
     path: Assets/Scenes/finalLevels/14. combined.unity
