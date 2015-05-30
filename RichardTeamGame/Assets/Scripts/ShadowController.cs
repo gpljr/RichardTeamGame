@@ -66,7 +66,7 @@ public class ShadowController : MonoBehaviour
             print("vPos1 "+vPos1);
             _shadowRenderer.material.SetVector("_Position1", vPos1);
             _shadowRenderer.material.SetVector("_Position2", vPos1);
-            float radius = 0.05f;
+            float radius = 0.2f;
             _shadowRenderer.material.SetFloat("_Radius", radius);
 
             _shadowRenderer.material.SetColor("_Color", _bgColor);
