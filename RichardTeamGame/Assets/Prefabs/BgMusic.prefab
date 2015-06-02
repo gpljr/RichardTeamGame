@@ -38,7 +38,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e50def2b4b42e694db756ecc123495b6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e843f53e8c73a5e4a911d62ab2a62e55, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488dfbd643e2f8d4bb615e54632d009c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: e50def2b4b42e694db756ecc123495b6, type: 3}
-  sadMusic: {fileID: 8300000, guid: 398ac50a185eaa34cb73d49181184b9d, type: 3}
+  beginMusic: {fileID: 8300000, guid: e843f53e8c73a5e4a911d62ab2a62e55, type: 3}
+  sadMusic: {fileID: 8300000, guid: 80866fce9f4d2b64c9cfa5790422cfce, type: 3}
   happyMusic: {fileID: 8300000, guid: 921547331d485514e885c0aad3e1791d, type: 3}
 --- !u!1001 &100100000
 Prefab:
